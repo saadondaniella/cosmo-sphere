@@ -19,6 +19,14 @@ body {
   color: var(--text-color);
 }
 
+/* Tar bort punkter på alla listor */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Stjärnig bakgrund */
 .starfield {
   position: fixed;
   top: 0;
@@ -45,20 +53,213 @@ body {
   }
 }
 
-img {
-  height: 100px;
-  width: 100px;
+.mobile-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
 }
 
+.mobile-header .logga {
+  height: auto;
+  max-width: 70vw;
+}
+
+.mobile-header .mobile-image {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: auto;
+}
+
+/* Desktop-header */
+.site-header {
+  display: none;
+  background: var(--background-color);
+}
+
+/* Växling mellan mobil och desktop-header */
+@media (min-width: 768px) {
+  .mobile-header {
+    display: none !important;
+  }
+  .site-header {
+    display: block !important;
+  }
+}
+
+/* Navigation */
 .navbar {
   display: flex;
   justify-content: center;
 }
 
-.navbar img {
-  height: 250px;
-  width: 500px;
+.navlist {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(2rem, 8vw, 6rem);
+  padding: 24px 16px;
+  margin: 0;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.navlist a {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 4px;
+  text-decoration: none;
+  font-family: "Michroma", system-ui, sans-serif;
+  font-size: clamp(16px, 2.2vw, 22px);
+  letter-spacing: 0.02em;
+  color: #e9ecf1;
+  transition: color 0.2s;
+}
+
+.navlist a:hover {
+  color: var(--pink-color);
+}
+
+/* Logga (desktop) */
+.logga {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: 550px;
+  max-width: 90vw;
+}
+
+/* Introtext */
+.intro {
+  text-align: center;
+  color: var(--accent-color);
+  background-color: var(--background-color);
+}
+
+/* Container: används t.ex. till formulär och bilder */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 3%;
+  margin: 4%;
+}
+
+.left {
+  flex: 1;
+  padding: 1em;
+}
+
+.container .left h2 {
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  color: var(--pink-color);
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+}
+
+.right img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Formulär */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 420px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background: var(--pink-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: fit-content;
+  align-self: baseline;
+}
+
+/* Filmkort – info och bild lika höga */
+.movie-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 4%;
+}
+
+.movie-info {
+  height: 100%;
+  padding: 1rem;
+  border: 2px solid var(--accent-color);
+  border-radius: 12px;
+  background-color: var(--background-color);
+}
+
+.movie-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Footer */
+.footer-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--background-color);
+}
+
+.footer-list {
+  min-width: 200px;
+}
+
+.footer-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin: 0.4rem 0;
+}
+
+.title-footer {
+  color: var(--blue-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer-list a {
@@ -71,108 +272,63 @@ img {
   color: var(--pink-color);
 }
 
-.footer-bar {
-  display: flex;
-  justify-content: end;
-  margin: 1.5em;
+@media (max-width: 768px) {
+  .footer-bar {
+    flex-direction: column;
+    align-items: baseline;
+    text-align: baseline;
+  }
 }
 
-.title-footer {
-  font-size: 1.5em;
-  color: var(--text-color);
-  font-weight: bold;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
+/* Rörlig dekoration */
 .moving-image {
   position: relative;
   animation: moveRight 10s linear infinite;
+  height: 100px;
+  width: 100px;
 }
 
 @keyframes moveRight {
   0% {
-    left: 0;
+    left: -10px;
+    transform: rotate(0deg);
   }
   100% {
     left: 100%;
+    transform: rotate(365deg);
   }
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.5em;
-  background-color: var(--blue-color);
-}
-
-.left {
-  flex: 1;
-  padding: 1em;
-}
-
-.right {
-  flex: 1;
-  display: flex;
-  justify-content: right;
-}
-
-.right img {
-  display: block;
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  object-fit: cover;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 400px;
-}
-form {
-  max-width: 420px;
-}
-
-input {
-  padding: 10px;
-  font-size: 16px;
-}
-
-button {
-  padding: 10px;
-  background: var(--background-color);
-  width: 150px;
-  color: var(--text-color);
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-}
+/* Responsiv design – gäller för skärmar under 768px */
 @media (max-width: 768px) {
+  /* Container */
   .container {
     flex-direction: column;
-    text-align: center;
-    align-items: center;
+    align-items: baseline;
   }
+
   .right {
     order: -1;
   }
+
   .right img {
     max-width: 360px;
   }
-}
 
-@media (max-width: 768px) {
+  /* Movie card */
+  .movie-card {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .movie-info,
+  .movie-image {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  /* Footer */
   .footer-bar {
     flex-direction: column;
-    text-align: center;
-    align-items: center;
   }
+}

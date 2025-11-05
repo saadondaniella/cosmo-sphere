@@ -33,7 +33,7 @@
             <li class="title-footer"> About us </li><br>
             <li>About</li>
             <li>Contact us</li>
-            <li> Studio</li>
+            <li>Studio</li>
             <li>Press</li>
             <li>Careers</li>
             <li>Investors</li>
