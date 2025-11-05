@@ -93,7 +93,7 @@ li {
 
 .moving-image {
   position: relative;
-  animation: moveRight 13s linear infinite;
+  animation: moveRight 10s linear infinite;
 }
 
 @keyframes moveRight {
@@ -104,3 +104,75 @@ li {
     left: 100%;
   }
 }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+  background-color: var(--blue-color);
+}
+
+.left {
+  flex: 1;
+  padding: 1em;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+}
+
+.right img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+form {
+  max-width: 420px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  background: var(--background-color);
+  width: 150px;
+  color: var(--text-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .right {
+    order: -1;
+  }
+  .right img {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-bar {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }

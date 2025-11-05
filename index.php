@@ -26,9 +26,27 @@ $stars = [
 require __DIR__ . "/header.php"; ?>
 
 <main>
-    <h1>COSMO SPHERE Cinema</h1>
+
     <p>Här kommer allt vårt innehåll</p>
 </main>
+
+<div class="container">
+    <div class="left">
+        <h1>Sphere’s Inner Circle</h1>
+        <p>Share your email to know about all our upcoming shows and events.</p>
+
+        <form>
+            <input type="text" placeholder="Full name *" required>
+            <input type="email" placeholder="Email *" required>
+            <p>By clicking submit I agree to the Privacy Policy and Terms of Use.</p>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="right">
+        <img src="/pictures/sci-fi movies.jpg" alt="Placeholder image">
+    </div>
+</div>
 
 <?php
 require __DIR__ . "/footer.php";
