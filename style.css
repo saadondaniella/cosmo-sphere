@@ -117,11 +117,13 @@ ul {
   font-size: clamp(16px, 2.2vw, 22px);
   letter-spacing: 0.02em;
   color: #e9ecf1;
-  transition: color 0.2s;
+  transition: all 0.25s ease;
 }
 
 .navlist a:hover {
   color: var(--pink-color);
+  text-shadow: 0 0 5px var(--pink-color), 0 0 10px var(--pink-color),
+    0 0 20px var(--pink-color), 0 0 40px var(--pink-color);
 }
 
 /* Logga (desktop) */
@@ -161,6 +163,8 @@ ul {
   font-size: 2.5em;
   letter-spacing: 2px;
   color: var(--pink-color);
+  text-shadow: 0 0 5px var(--pink-color), 0 0 10px var(--pink-color),
+    0 0 20px var(--pink-color), 0 0 40px var(--pink-color);
 }
 
 .right {
@@ -215,10 +219,11 @@ button {
 
 .movie-info {
   height: 100%;
-  padding: 1rem;
+  padding: 4rem;
   border: 2px solid var(--accent-color);
   border-radius: 12px;
   background-color: var(--background-color);
+  font-size: 1em;
 }
 
 .movie-image img {
@@ -234,10 +239,10 @@ button {
   justify-content: flex-end;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 2.5rem;
   padding: 2rem 1rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 5%;
   background-color: var(--background-color);
 }
 
@@ -256,7 +261,7 @@ button {
 }
 
 .title-footer {
-  color: var(--blue-color);
+  color: var(--accent-color);
   font-weight: bold;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
@@ -270,8 +275,9 @@ button {
 
 .footer-list a:hover {
   color: var(--pink-color);
+  text-shadow: 0 0 5px var(--pink-color), 0 0 10px var(--pink-color),
+    0 0 20px var(--pink-color), 0 0 40px var(--pink-color);
 }
-
 @media (max-width: 768px) {
   .footer-bar {
     flex-direction: column;
@@ -330,5 +336,116 @@ button {
   /* Footer */
   .footer-bar {
     flex-direction: column;
+  }
+}
+.genrebox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolumner på mobil */
+  gap: 6px;
+  padding: 6px 0;
+  margin: 5%;
+}
+
+.genrebox div {
+  border: 1px solid var(--accent-color);
+  color: var(#d9d9d9);
+  text-align: center;
+  padding: 3px;
+  border-radius: 12px;
+  font-family: "Michroma", system-ui, sans-serif;
+  font-size: clamp(10px, 2.3vw, 13px);
+}
+
+@media (min-width: 900px) {
+  .genrebox {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: nowrap;
+    margin: 4%;
+  }
+
+  .genrebox div {
+    padding: 6px;
+    font-size: 14px;
+  }
+}
+
+.movie-description .movie-card {
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.movie-description {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  background-color: var(--background-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 12px;
+  padding: 5%;
+  margin: 5%;
+}
+
+.time-tablet {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  padding: 3px;
+  justify-items: baseline;
+}
+
+.days {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  padding: 6px;
+  font-size: 14px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.25s ease;
+}
+
+.days:hover {
+  background-color: var(--pink-color);
+  color: var(--text-color);
+  box-shadow: 0 0 5px var(--pink-color), 0 0 10px var(--pink-color),
+    0 0 20px var(--pink-color), 0 0 40px var(--pink-color);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .movie-description {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem 3rem;
+  }
+
+  .about-movie p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .time-tablet {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    justify-items: stretch;
+  }
+
+  .days {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .movie-description {
+    max-width: 1100px;
+  }
+}
+@media (min-width: 768px) {
+  .movie-card {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

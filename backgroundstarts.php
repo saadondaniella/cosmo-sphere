@@ -9,7 +9,7 @@ $stars = [
 ?>
 
 <div class="starfield">
-    <?php for ($i = 0; $i < 200; $i++): ?>
+    <?php for ($i = 0; $i < 400; $i++): ?>
         <?php $star = $stars[$i % count($stars)]; ?>
         <div class="star" style="
             background-color: <?= $star['color']; ?>;

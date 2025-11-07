@@ -45,10 +45,42 @@ require __DIR__ . "/backgroundstarts.php"; ?>
             <img src="/pictures/movie1.jpeg" alt="Blade Runner 2049 poster">
         </div>
     </article>
+    <section class="genrebox">
+        <div>Action epic</div>
+        <div>AI</div>
+        <div>Cyber Thriller</div>
+        <div>Cyber Punk</div>
+        <div>Dystopian Sci-Fi</div>
+        <div>Sci-Fi epic</div>
+    </section>
 
+    <article class="movie-description">
+        <div class="about-movie">
+            <p>Thirty years after the events of the first film, the world of Blade Runner 2049 is a bleak and beautiful vision of
+                the future — neon-lit cities, synthetic beings, and fading memories.<br><br>
+                Officer K, a new generation Blade Runner for the Los Angeles Police Department, uncovers a long-buried secret that
+                could shatter the fragile balance between humans and replicants. <br><br>
+                His investigation leads him on a haunting journey to track down Rick Deckard, a former Blade Runner who has been
+                missing for three decades.
+            </p>
 
+            <p> Director: Denis Vileneuve</p>
 
-
+            <p>Stars: Ryan Gosling, Michael Green, Philip k Dick</p><br><br>
+            <p>Tickets</p>
+            <div class="time-tablet">
+                <div class="days">Monday 1/12</div>
+                <div class="days">Tusday 2/12</div>
+                <div class="days">Wednsday 3/12</div>
+                <div class="days">Thursday 4/12</div>
+                <div class="days">Friday 5/12</div>
+                <div class="days">Saturday 6/12</div>
+                <div class="days">Sunday 7/12</div>
+            </div>
+            <br>
+            <p>Swedish subtitle</p>
+            <p>VIP- Expirience</p>
+    </article>
 
     </main>
 
