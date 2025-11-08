@@ -24,7 +24,7 @@ require __DIR__ . "/header.php"; ?>
     </div>
 
     <div class="right">
-        <img src="/pictures/sci-fi movies.jpg" alt="Placeholder image">
+        <img src="pictures/sci-fi movies.jpg" alt="Placeholder image">
     </div>
 </div>
 

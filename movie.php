@@ -42,7 +42,7 @@ require __DIR__ . "/backgroundstarts.php"; ?>
         </div>
 
         <div class="movie-image">
-            <img src="/pictures/movie1.jpeg" alt="Blade Runner 2049 poster">
+            <img src="pictures/movie1.jpeg" alt="Blade Runner 2049 poster">
         </div>
     </article>
     <section class="genrebox">
@@ -81,22 +81,6 @@ require __DIR__ . "/backgroundstarts.php"; ?>
             <p>Swedish subtitle</p>
             <p>VIP- Expirience</p>
     </article>
-
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <?php
-
     require __DIR__ . "/footer.php";
