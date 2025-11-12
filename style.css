@@ -446,3 +446,138 @@ button {
     margin-right: auto;
   }
 }
+.feature-film {
+  --gutter: 16px; /* jämn kant på båda sidor */
+  --frame-radius: 14px;
+  width: 100%;
+  max-width: 680px;
+  padding-inline: var(--gutter);
+  margin: 2rem auto;
+  position: relative; /* så overlay kan absolut-positioneras senare */
+  box-sizing: border-box;
+}
+
+.feature-film__frame {
+  border-radius: var(--frame-radius);
+  overflow: hidden; /* rundar hörn på bilden */
+}
+
+.feature-film__poster {
+  display: block;
+  width: 100%;
+  height: auto; /* alt: sätt en höjd + object-fit om du vill */
+  /* ex: height: 260px; object-fit: cover; */
+}
+
+.feature-film__overlay {
+  margin-top: 0.8rem;
+  background: rgba(10, 13, 25, 0.9);
+  border: 1.5px solid var(--accent-color);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  backdrop-filter: blur(6px);
+}
+
+.feature-film__label {
+  color: var(--accent-color);
+  font-size: 0.95rem;
+  margin: 0 0 0.35rem;
+}
+
+.feature-film__headline {
+  color: var(--accent-color);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 0 0 0.9rem;
+}
+
+.feature-film__actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.feature-btn {
+  border-radius: 999px;
+  padding: 0.65rem 1.1rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  line-height: 1;
+  transition: transform 140ms ease, background-color 140ms ease,
+    color 140ms ease;
+}
+.feature-btn--outline {
+  border: 1px solid var(--pink-color);
+  color: var(--text-color);
+}
+.feature-btn--outline:hover {
+  background-color: var(--pink-color);
+}
+.feature-btn--filled {
+  border: 1px solid var(--pink-color);
+  color: var(--text-color);
+}
+.feature-btn--filled:hover {
+  background-color: var(--pink-color);
+}
+
+/* ---- Tablet (≥768px): overlay över bilden ---- */
+@media (min-width: 768px) {
+  .feature-film {
+    --gutter: 24px;
+    max-width: 900px;
+    padding-inline: var(--gutter);
+  }
+
+  /* Låt overlay ligga ovanpå bilden, förankrad mot nederkant vänster */
+  .feature-film__overlay {
+    position: absolute;
+    left: calc(var(--gutter) + 16px);
+    bottom: 18px;
+    margin: 0;
+    max-width: 72%;
+    padding: 1.2rem 1.5rem;
+  }
+
+  .feature-film__headline {
+    font-size: 1.35rem;
+    line-height: 1.55;
+  }
+  .feature-btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.4rem;
+  }
+}
+
+/* ---- Desktop (≥1024px): större + overlay sticker ut till vänster ---- */
+@media (min-width: 1024px) {
+  .feature-film {
+    --gutter: 32px;
+    max-width: 1100px;
+    padding-inline: var(--gutter);
+    margin-block: 4rem;
+  }
+
+  .feature-film__overlay {
+    position: absolute;
+    left: calc(var(--gutter) + 16px);
+    bottom: 26px;
+    transform: translateX(-20%);
+    max-width: 58%;
+    padding: 1.8rem 2.2rem;
+    border-radius: 14px;
+  }
+
+  .feature-film__label {
+    font-size: 1.05rem;
+  }
+  .feature-film__headline {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 1.1rem;
+  }
+  .feature-btn {
+    padding: 0.85rem 1.6rem;
+  }
+}
