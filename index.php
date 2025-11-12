@@ -9,6 +9,26 @@ require __DIR__ . "/header.php"; ?>
     <p>Visar de gamla och senaste filmerna</p>
 </div>
 
+<section class="feature-film">
+    <div class="feature-film__frame">
+        <img
+            src="/pictures/blade-runner-old.webp"
+            alt="Blade Runner poster"
+            class="feature-film__poster" />
+    </div>
+
+    <div class="feature-film__overlay">
+        <p class="feature-film__label">The classicer:</p>
+        <h3 class="feature-film__headline">
+            BLADE RUNNER – The future we still don’t understand.
+        </h3>
+        <div class="feature-film__actions">
+            <a href="movie.php" class="feature-btn feature-btn--outline">Watch trailer</a>
+            <a href="movie.php" class="feature-btn feature-btn--filled">Get tickets</a>
+        </div>
+    </div>
+</section>
+
 <br><br><br><br><br><br><br><br><br>
 <div class="container">
     <div class="left">
