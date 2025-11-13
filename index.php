@@ -18,7 +18,7 @@ require __DIR__ . "/header.php"; ?>
     </div>
 
     <div class="feature-film__overlay">
-        <p class="feature-film__label">The classicer:</p>
+        <p class="feature-film__label">A classicer:</p>
         <h3 class="feature-film__headline">
             BLADE RUNNER – The future we still don’t understand.
         </h3>
@@ -30,6 +30,37 @@ require __DIR__ . "/header.php"; ?>
 </section>
 
 <br><br><br><br><br><br><br><br><br>
+<section class="karusell">
+    <div class="cards-wrapper">
+        <article class="card">
+            <img src="/pictures/biosalong.webp" />
+            <h2>The cinema</h2>
+            <p>Welcome in to cosmo Sphere Cinema…</p>
+        </article>
+
+        <article class="card">
+            <img src="/pictures/troja.jpg" />
+            <h2>SHOP</h2>
+            <p>Watch all our products from the shop…</p>
+        </article>
+
+        <article class="card">
+            <img src="/pictures/poster.jpg" />
+            <h2>Posters</h2>
+            <p>Get your favorit Sci-fi poster</p>
+        </article>
+        <article class="card">
+            <img src="/pictures/wall-e.jpg" />
+            <h2>Animation</h2>
+            <p>Watch all our animatied movies</p>
+        </article>
+        <article class="card">
+            <img src="/pictures/date.jpg" />
+            <h2>Date Night</h2>
+            <p>Bring your date and get a romantic experiance in the sphere</p>
+        </article>
+    </div>
+</section>
 <div class="container">
     <div class="left">
         <h2>Sphere’s Inner Circle</h2>
@@ -47,7 +78,6 @@ require __DIR__ . "/header.php"; ?>
         <img src="pictures/sci-fi movies.jpg" alt="Placeholder image">
     </div>
 </div>
-
 
 <br><br><br><br><br><br>
 <?php

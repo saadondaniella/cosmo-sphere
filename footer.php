@@ -41,7 +41,7 @@
     </div>
 </section>
 
-<img src="/pictures/WALL_Elila.png" alt="WALL_E" class="moving-image">
+
 
 </body>
 
