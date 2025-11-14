@@ -5,8 +5,8 @@ require __DIR__ . "/header.php"; ?>
 
 
 <div class="intro">
-    <h1>Sci-Fi biograf i centrala Göteborg.</h1>
-    <p>Visar de gamla och senaste filmerna</p>
+    <h1>Welcome to a world full of Sci-Fi.</h1>
+    <p>Here you will find all the old and the latest movies. from single films to trilogies</p>
 </div>
 
 <section class="feature-film">
@@ -57,7 +57,7 @@ require __DIR__ . "/header.php"; ?>
         <article class="card">
             <img src="/pictures/date.jpg" />
             <h2>Date Night</h2>
-            <p>Bring your date and get a romantic experiance in the sphere</p>
+            <p>Bring your date under the stars and get a romantic experiance in the sphere</p>
         </article>
     </div>
 </section>

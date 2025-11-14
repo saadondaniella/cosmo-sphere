@@ -139,6 +139,7 @@ ul {
   text-align: center;
   color: var(--accent-color);
   background-color: var(--background-color);
+  margin: 5%;
 }
 
 /* Container: används t.ex. till formulär och bilder */
@@ -190,6 +191,8 @@ form {
 input {
   padding: 10px;
   font-size: 16px;
+  border-radius: 12px;
+  background-color: var(--text-color);
 }
 
 button {
@@ -450,13 +453,12 @@ button {
   border-radius: 14px;
   width: 100%;
   max-width: 680px;
-  padding-inline: var(--gutter);
   margin: 2rem auto;
   position: relative;
 }
 
 .feature-film__frame {
-  border-radius: var(--frame-radius);
+  border-radius: 12px;
   overflow: hidden;
   margin: 5%;
 }
@@ -474,13 +476,13 @@ button {
   border: 1.5px solid var(--accent-color);
   border-radius: 12px;
   padding: 1rem 1.2rem;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(4px);
 }
 
 .feature-film__label {
   color: var(--accent-color);
-  font-size: 0.5rem;
-  padding: 2%;
+  font-size: 1rem;
+  margin-left: 3%;
 }
 
 .feature-film__headline {
