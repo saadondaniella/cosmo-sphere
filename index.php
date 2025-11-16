@@ -52,7 +52,7 @@ require __DIR__ . "/header.php"; ?>
             <p>Get your favorit Sci-fi poster</p>
         </article>
         <article class="card">
-            <img src="/pictures/wall-e.jpg" />
+            <img src="/pictures/wall-e1.jpg" />
             <h2>Animation</h2>
             <p>Watch all our animatied movies</p>
         </article>

@@ -1,6 +1,6 @@
 .movies-list-container {
   display: grid;
-  gap: 1rem; /* space between movie items */
+  gap: 1rem;
   align-items: stretch;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -14,11 +14,6 @@
   border-radius: 20px;
 }
 
-/* .future-3 {
-  grid-column: 1 / -1;
-} */
-
-/* Image should take full width */
 .movie-img {
   width: 100%;
   height: auto;
@@ -26,7 +21,6 @@
   object-fit: cover;
 }
 
-/* Buttons layout */
 .movie-buttons-pink {
   display: flex;
   justify-content: center;
@@ -38,8 +32,6 @@
   background: var(--pink-color);
 }
 
-/* ✅ Mobile layout */
-
 @media (max-width: 768px) {
   .movies-list-container {
     grid-template-columns: 1fr 1fr;
@@ -48,12 +40,12 @@
 
 @media (max-width: 768px) {
   .movie-item {
-    grid-template-columns: 1fr; /* stack everything vertically */
+    grid-template-columns: 1fr;
     text-align: center;
   }
 
   .movie-title {
-    order: -1; /* optional: keep the title above image */
+    order: -1;
   }
 
   .movie-img {
