@@ -1,0 +1,65 @@
+.movies-list-container {
+  display: grid;
+  gap: 1rem; /* space between movie items */
+  align-items: stretch;
+}
+
+.movie-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid var(--pink-color);
+  border-radius: 20px;
+}
+
+/* .future-3 {
+  grid-column: 1 / -1; 
+} */
+
+/* Image should take full width */
+.movie-img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Buttons layout */
+.movie-buttons-pink {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.movie-button {
+  background: var(--pink-color);
+}
+
+/* ✅ Mobile layout */
+
+@media (max-width: 768px) {
+  .movies-list-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-item {
+    grid-template-columns: 1fr; /* stack everything vertically */
+    text-align: center;
+  }
+
+  .movie-title {
+    order: -1; /* optional: keep the title above image */
+  }
+
+  .movie-img {
+    margin: 0 auto;
+  }
+
+  .movie-buttons {
+    justify-content: center;
+  }
+}

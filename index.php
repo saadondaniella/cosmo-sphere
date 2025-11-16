@@ -29,6 +29,8 @@ require __DIR__ . "/header.php"; ?>
     </div>
 </section>
 
+<?php require __DIR__ . "/movie-list.php"; ?>
+
 <br><br><br><br><br><br><br><br><br>
 <section class="karusell">
     <div class="cards-wrapper">
