@@ -604,6 +604,10 @@ button {
   border: 1px solid black;
   scroll-snap-align: center;
 }
+.card h2,
+p {
+  background-color: var(--background-color);
+}
 @media (min-width: 900px) {
   .cards-wrapper {
     padding: 40px 100px;

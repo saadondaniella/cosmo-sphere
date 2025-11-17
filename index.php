@@ -4,10 +4,10 @@ require __DIR__ . "/header.php"; ?>
 
 
 
-<div class="intro">
-    <h1>Welcome to a world full of Sci-Fi.</h1>
+<article class="intro">
+    <h1>Welcome <br>to a world full of Sci-Fi.</h1>
     <p>Here you will find all the old and the latest movies. from single films to trilogies</p>
-</div>
+</article>
 
 <section class="feature-film">
     <div class="feature-film__frame">
@@ -29,7 +29,6 @@ require __DIR__ . "/header.php"; ?>
     </div>
 </section>
 
-<br><br><br><br><br><br><br><br><br>
 <section class="karusell">
     <div class="cards-wrapper">
         <article class="card">
@@ -79,7 +78,7 @@ require __DIR__ . "/header.php"; ?>
     </div>
 </div>
 
-<br><br><br><br><br><br>
+
 <?php
 require __DIR__ . "/footer.php";
 ?>
