@@ -45,7 +45,7 @@ require __DIR__ . "/Header.php"; ?>
         </article>
 
         <article class="card">
-            <img src="/poster.jpg" />
+            <img src="/pictures/poster.jpg" />
             <h2>Posters</h2>
             <p>Get your favorit Sci-fi poster</p>
         </article>
