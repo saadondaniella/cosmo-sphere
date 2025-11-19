@@ -1,6 +1,6 @@
 <?php
 require __DIR__ . "/backgroundstarts.php";
-require __DIR__ . "/header.php"; ?>
+require __DIR__ . "/Header.php"; ?>
 
 <article class="intro">
     <h1>Welcome <br>to a world full of Sci-Fi.</h1>
