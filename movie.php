@@ -69,13 +69,13 @@ require __DIR__ . "/backgroundstarts.php"; ?>
             <p>Stars: Ryan Gosling, Michael Green, Philip k Dick</p><br><br>
             <p>Tickets</p>
             <div class="time-tablet">
-                <div class="days">Monday 1/12</div>
-                <div class="days">Tusday 2/12</div>
-                <div class="days">Wednsday 3/12</div>
-                <div class="days">Thursday 4/12</div>
-                <div class="days">Friday 5/12</div>
-                <div class="days">Saturday 6/12</div>
-                <div class="days">Sunday 7/12</div>
+                <div class="days">Monday 1/12 19:00</div>
+                <div class="days">Tusday 2/12 19:00</div>
+                <div class="days">Wednsday 3/12 19:00</div>
+                <div class="days">Thursday 4/12 19:00</div>
+                <div class="days">Friday 5/12 19:00</div>
+                <div class="days">Saturday 6/12 18:30</div>
+                <div class="days">Sunday 7/12 16:00</div>
             </div>
             <br>
             <p>Swedish subtitle</p>

@@ -1,6 +1,8 @@
+* {
+    box-sizing: border-box;
+}
 .container{
     display: flex;
-    box-sizing: border-box;
     background-color: var(--darkblue-color);
     width: fit-content;
     height: fit-content;

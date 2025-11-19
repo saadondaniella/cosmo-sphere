@@ -19,7 +19,6 @@ body {
   color: var(--text-color);
 }
 
-/* Tar bort punkter på alla listor */
 ul {
   list-style: none;
   padding: 0;
@@ -116,7 +115,7 @@ ul {
   font-family: "Michroma", system-ui, sans-serif;
   font-size: clamp(16px, 2.2vw, 22px);
   letter-spacing: 0.02em;
-  color: #e9ecf1;
+  color: var(--text-color);
   transition: all 0.25s ease;
 }
 
@@ -140,6 +139,7 @@ ul {
   text-align: center;
   color: var(--accent-color);
   background-color: var(--background-color);
+  margin: 5%;
 }
 
 /* Container: används t.ex. till formulär och bilder */
@@ -148,7 +148,6 @@ ul {
   justify-content: space-between;
   align-items: center;
   gap: 0.5em;
-  background-color: var(--background-color);
   color: var(--text-color);
   padding: 3%;
   margin: 4%;
@@ -192,13 +191,15 @@ form {
 input {
   padding: 10px;
   font-size: 16px;
+  border-radius: 12px;
+  background-color: var(--text-color);
 }
 
 button {
   padding: 10px 20px;
-  background: var(--pink-color);
+  background: var(--background-color);
   color: var(--text-color);
-  border: none;
+  border: solid 2px var(--pink-color);
   border-radius: 20px;
   cursor: pointer;
   width: fit-content;
@@ -288,8 +289,8 @@ button {
 .moving-image {
   position: relative;
   animation: moveRight 10s linear infinite;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
 }
 
 @keyframes moveRight {
@@ -448,4 +449,168 @@ button {
     margin-right: auto;
   }
 }
+.feature-film {
+  border-radius: 14px;
+  width: 100%;
+  max-width: 680px;
+  margin: 2rem auto;
+  position: relative;
+}
 
+.feature-film__frame {
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 5%;
+}
+
+.feature-film__poster {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 5%;
+}
+
+.feature-film__overlay {
+  margin: 7%;
+  background: rgba(10, 13, 25, 0.9);
+  border: 1.5px solid var(--accent-color);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  backdrop-filter: blur(4px);
+}
+
+.feature-film__label {
+  color: var(--accent-color);
+  font-size: 1rem;
+  margin-left: 3%;
+}
+
+.feature-film__headline {
+  color: var(--accent-color);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  padding: 2%;
+}
+
+.feature-film__actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.feature-btn {
+  border-radius: 999px;
+  padding: 0.65rem 1.1rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  line-height: 1;
+  margin-bottom: 3%;
+  transition: transform 140ms ease, background-color 140ms ease,
+    color 140ms ease;
+}
+.feature-btn--outline {
+  border: 1px solid var(--accent-color);
+  color: var(--text-color);
+}
+.feature-btn--outline:hover {
+  background-color: var(--pink-color);
+}
+.feature-btn--filled {
+  border: 1px solid var(--pink-color);
+  color: var(--text-color);
+}
+.feature-btn--filled:hover {
+  background-color: var(--pink-color);
+}
+
+/* ---- Tablet (≥768px): overlay över bilden ---- */
+@media (min-width: 768px) {
+  .feature-film {
+    --gutter: 24px;
+    max-width: 900px;
+    padding-inline: var(--gutter);
+  }
+
+  .feature-film__overlay {
+    position: absolute;
+    left: calc(var(--gutter) + 16px);
+    bottom: 18px;
+    margin: 0;
+    max-width: 72%;
+    padding: 1.2rem 1.5rem;
+  }
+
+  .feature-film__headline {
+    font-size: 1.35rem;
+    line-height: 1.55;
+  }
+  .feature-btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .feature-film {
+    --gutter: 32px;
+    max-width: 1100px;
+    padding-inline: var(--gutter);
+    margin-block: 4rem;
+  }
+
+  .feature-film__overlay {
+    position: absolute;
+    left: calc(var(--gutter) + 16px);
+    bottom: 26px;
+    transform: translateX(-20%);
+    max-width: 58%;
+    padding: 1rem;
+    border-radius: 14px;
+  }
+
+  .feature-film__label {
+    font-size: 1rem;
+  }
+  .feature-film__headline {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 1.1rem;
+  }
+  .feature-btn {
+    padding: 0.85rem 1.6rem;
+  }
+}
+/* KARUSELL */
+.cards-wrapper {
+  display: flex;
+  gap: 1em;
+  overflow-x: auto;
+  padding: 1.5em;
+  margin-top: 5%;
+  scroll-snap-type: x mandatory;
+}
+
+.card img {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+.card {
+  min-width: 80vw;
+  border-radius: 16px;
+  padding: 1em;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid black;
+  scroll-snap-align: center;
+}
+@media (min-width: 900px) {
+  .cards-wrapper {
+    padding: 40px 100px;
+  }
+
+  .card {
+    min-width: 30vw;
+    max-width: 400px;
+  }
+}
