@@ -7,8 +7,10 @@
 }
 
 .rectangle{
+    display: flex;
+    justify-content: flex-end;
     height:180px;
-    width: 996px;
+    width: 50vh;
     background-color: var(--darkblue-color);
     font-size: 18px;
 }
@@ -24,4 +26,10 @@
 
 @media (max-width: 425px){
     .container{ flex-direction: column;}
+}
+
+.box-c img{
+
+width: 40px;
+height: 40px;
 }
