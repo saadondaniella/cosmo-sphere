@@ -2,8 +2,6 @@
 require __DIR__ . "/backgroundstarts.php";
 require __DIR__ . "/header.php"; ?>
 
-
-
 <article class="intro">
     <h1>Welcome <br>to a world full of Sci-Fi.</h1>
     <p>Here you will find all the old and the latest movies. from single films to trilogies</p>
@@ -32,6 +30,7 @@ require __DIR__ . "/header.php"; ?>
 <?php require __DIR__ . "/movie-list.php"; ?>
 
 <section class="karusell">
+    <h2 id="header-karusell">Inside the world of Cosmo Sphere</h2>
     <div class="cards-wrapper">
         <article class="card">
             <img src="/pictures/biosalong.webp" />
@@ -59,6 +58,11 @@ require __DIR__ . "/header.php"; ?>
             <img src="/pictures/date.jpg" />
             <h2>Date Night</h2>
             <p>Bring your date under the stars and get a romantic experiance in the sphere</p>
+        </article>
+        <article class="card">
+            <img src="/pictures/chips.webp" />
+            <h2>Offers</h2>
+            <p>See our offers on snacks</p>
         </article>
     </div>
 </section>

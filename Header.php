@@ -14,7 +14,7 @@
 
 <body>
     <header class="mobile-header">
-        <a href="movie.php"> <img class="mobile-image" src="/pictures/sidebar.png" alt="Liten menyikon"></a><br>
+        <a href="movie.php"> <img class="mobile-image" src="/pictures/Sidebar.png" alt="Liten menyikon"></a>
     </header>
 
     <header class="site-header">
