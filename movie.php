@@ -67,20 +67,51 @@ require __DIR__ . "/backgroundstarts.php"; ?>
             <p> Director: Denis Vileneuve</p>
 
             <p>Stars: Ryan Gosling, Michael Green, Philip k Dick</p><br><br>
-            <p>Tickets</p>
+            <p>Get tickets<br>
+                Choose your date:</p>
             <div class="time-tablet">
-                <div class="days">Monday 1/12 19:00</div>
-                <div class="days">Tusday 2/12 19:00</div>
-                <div class="days">Wednsday 3/12 19:00</div>
-                <div class="days">Thursday 4/12 19:00</div>
-                <div class="days">Friday 5/12 19:00</div>
-                <div class="days">Saturday 6/12 18:30</div>
-                <div class="days">Sunday 7/12 16:00</div>
+                <div class="days">Mon 1/12 18:00, 21:00</div>
+                <div class="days">Tue 2/12 18:00, 21:00</div>
+                <div class="days">Wed 3/12 18:00, 21:00</div>
+                <div class="days">Thu 4/12 18:00, 21:00</div>
+                <div class="days">Fri 5/12 19:00, 21:00</div>
+                <div class="days">Sat 6/12 15:00, 21:00</div>
+                <div class="days">Sun 7/12 14:00, 21:00</div>
             </div>
             <br>
             <p>Swedish subtitle</p>
             <p>VIP- Expirience</p>
     </article>
+    <section class="similar-movies">
+        <h2>More movies like this</h2>
+
+        <div class="similar-track">
+            <div class="similar-card">
+                <img src="/pictures/Jurassic Park 2.jpg" alt="Jurassic Park 2">
+                <p class="similar-title">Jurassic Park 2</p>
+            </div>
+
+
+            <div class="similar-card">
+                <img src="/pictures/Dune.jpg" alt="Dune">
+                <p class="similar-title">Dune</p>
+            </div>
+            <div class="similar-card">
+                <img src="/pictures/Terminator 1.jpg" alt="Terminator 1">
+                <p class="similar-title">Terminator</p>
+            </div>
+
+            <div class="similar-card">
+                <img src="/pictures/Preadator badlands.jpg" alt="Predator Badlands">
+                <p class="similar-title">Predator Badlands</p>
+            </div>
+            <div class="similar-card">
+                <img src="/pictures/Terminator 3.jpg" alt="Terminator 3">
+                <p class="similar-title">Terminator 3</p>
+            </div>
+
+        </div>
+    </section>
     </main>
     <?php
     require __DIR__ . "/footer.php";
