@@ -240,7 +240,7 @@ button {
   gap: 2.5rem;
   padding: 2rem 1rem;
   max-width: 1200px;
-  margin: 5%;
+  margin: 0 auto 5%; /* centrerar blocket horisontellt, 5% bara nedåt */
   background-color: var(--background-color);
 }
 
@@ -279,8 +279,14 @@ button {
 @media (max-width: 768px) {
   .footer-bar {
     flex-direction: column;
-    align-items: baseline;
-    text-align: baseline;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  .footer-list {
+    min-width: auto;
   }
 }
 
@@ -713,8 +719,6 @@ p {
 #header-karusell {
   color: var(--accent-color);
   text-align: center;
-  margin-left: 6%;
   padding-top: 5%;
   font-size: 2em;
-  background-color: var(--background-color);
 }

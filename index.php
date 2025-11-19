@@ -29,13 +29,13 @@ require __DIR__ . "/Header.php"; ?>
 
 <?php require __DIR__ . "/movie-list.php"; ?>
 
+<h2 id="header-karusell">Get the full experiance of Cosmo Sphere</h2>
 <section class="karusell">
-    <h2 id="header-karusell">Inside the world of Cosmo Sphere</h2>
     <div class="cards-wrapper">
         <article class="card">
             <img src="/pictures/biosalong.webp" />
             <h2>The cinema</h2>
-            <p>Welcome in to cosmo Sphere Cinema…</p>
+            <p>Welcome inside of cosmo Sphere Cinema…</p>
         </article>
 
         <article class="card">
@@ -62,7 +62,7 @@ require __DIR__ . "/Header.php"; ?>
         <article class="card">
             <img src="/pictures/chips.webp" />
             <h2>Offers</h2>
-            <p>See our offers on snacks</p>
+            <p>Take advantage of our incredible offers on snacks and treats</p>
         </article>
     </div>
 </section>
