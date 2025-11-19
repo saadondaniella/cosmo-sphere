@@ -198,4 +198,6 @@
         </div>
     </div>
 
+    <button id="show-more" class="show-more-button">Show more!</button>
+
 </div>

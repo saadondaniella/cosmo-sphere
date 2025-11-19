@@ -43,6 +43,16 @@
 
 <img src="/pictures/WALL_Elila.png" alt="wall-e" class="moving-image">
 
+<script>
+    document.getElementById("show-more").addEventListener("click", function() {
+        const hiddenMovies = document.querySelectorAll(".movie-item:nth-child(n+7)");
+
+        hiddenMovies.forEach(item => item.classList.add("show"));
+
+        this.style.display = "none";
+    });
+</script>
+
 </body>
 
 </html>

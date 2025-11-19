@@ -21,6 +21,14 @@
     0 0 5px var(--item-color), 0 0 10px var(--item-color);
 }
 
+.movie-item:nth-child(n + 7) {
+  display: none;
+}
+
+.movie-item.show {
+  display: flex;
+}
+
 .movie-title {
   height: 3rem;
 }
