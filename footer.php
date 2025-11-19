@@ -46,10 +46,15 @@
 <script>
     document.getElementById("show-more").addEventListener("click", function() {
         const hiddenMovies = document.querySelectorAll(".movie-item:nth-child(n+7)");
+        const isShowingMore = this.classList.toggle("expanded");
 
-        hiddenMovies.forEach(item => item.classList.add("show"));
-
-        this.style.display = "none";
+        if (isShowingMore) {
+            hiddenMovies.forEach(item => item.classList.add("show"));
+            this.textContent = "Show less";
+        } else {
+            hiddenMovies.forEach(item => item.classList.remove("show"));
+            this.textContent = "Show more";
+        }
     });
 </script>
 
