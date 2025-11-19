@@ -392,54 +392,68 @@ button {
   margin: 5%;
 }
 
+/* RUBRIKEN ovanför datumrutorna */
+.choose-date-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--pink-color);
+  margin: 1.5rem 0 1rem;
+  line-height: 1.3;
+}
+
+.choose-date-title span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-color);
+  opacity: 0.9;
+}
+
+/* DATUMRUTOR – MOBIL FÖRST */
 .time-tablet {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 6px;
-  padding: 3px;
-  justify-items: baseline;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1rem 0 1.5rem;
 }
 
 .days {
-  background-color: var(--pink-color);
-  color: var(--background-color);
-  padding: 6px;
-  font-size: 14px;
-  border-radius: 8px;
-  text-align: center;
-  transition: all 0.25s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--accent-color);
+  background: rgba(255, 255, 255, 0.02);
+  font-size: 0.9rem;
+}
+
+.day-label {
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+.day-times {
+  opacity: 0.9;
 }
 
 .days:hover {
-  background-color: var(--pink-color);
-  color: var(--text-color);
-  box-shadow: 0 0 5px var(--pink-color), 0 0 10px var(--pink-color),
-    0 0 20px var(--pink-color), 0 0 40px var(--pink-color);
-  cursor: pointer;
+  background: rgba(255, 255, 255, 0.06);
 }
 
+/* DESKTOP: gör dem till grid istället för staplad lista */
 @media (min-width: 768px) {
-  .movie-description {
-    max-width: 900px;
-    margin: 3rem auto;
-    padding: 2rem 3rem;
-  }
-
-  .about-movie p {
-    font-size: 1rem;
-    line-height: 1.6;
-    text-align: left;
-  }
-
   .time-tablet {
-    grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
-    justify-items: stretch;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
   }
-
+  .choose-date-title {
+    margin-bottom: 3%;
+    margin-top: 3%;
+  }
   .days {
-    font-size: 0.95rem;
-    padding: 10px 12px;
+    justify-content: flex-start;
+    gap: 0.5rem;
   }
 }
 
@@ -595,14 +609,17 @@ button {
   margin-top: 5%;
   scroll-snap-type: x mandatory;
 }
+
 .cards-wrapper::-webkit-scrollbar {
   display: none;
 }
+
 .card img {
   height: 50%;
   width: 100%;
   display: flex;
 }
+
 .card {
   min-width: 80vw;
   border-radius: 16px;
@@ -611,10 +628,12 @@ button {
   border: 1px solid black;
   scroll-snap-align: center;
 }
+
 .card h2,
 p {
   background-color: var(--background-color);
 }
+
 @media (min-width: 900px) {
   .cards-wrapper {
     /* sluta vara karusell */
@@ -638,6 +657,7 @@ p {
     display: block;
   }
 }
+
 .similar-movies {
   margin: 3rem 5%;
 }
@@ -648,14 +668,13 @@ p {
   color: var(--text-color);
 }
 
-/* Horisontell scroll-rad */
 .similar-track {
   display: flex;
   gap: 16px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding: 6px 0 16px 0;
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
 }
 
 .similar-track::-webkit-scrollbar {

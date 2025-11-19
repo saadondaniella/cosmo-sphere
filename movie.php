@@ -66,18 +66,43 @@ require __DIR__ . "/backgroundstarts.php"; ?>
 
             <p> Director: Denis Vileneuve</p>
 
-            <p>Stars: Ryan Gosling, Michael Green, Philip k Dick</p><br><br>
-            <p>Get tickets<br>
-                Choose your date:</p>
+            <p>Stars: Ryan Gosling, Michael Green, Philip k Dick</p><br>
+            <p class="choose-date-title">
+                Get tickets <br>
+                <span>Choose the date:</span>
+            </p>
+
             <div class="time-tablet">
-                <div class="days">Mon 1/12 18:00, 21:00</div>
-                <div class="days">Tue 2/12 18:00, 21:00</div>
-                <div class="days">Wed 3/12 18:00, 21:00</div>
-                <div class="days">Thu 4/12 18:00, 21:00</div>
-                <div class="days">Fri 5/12 19:00, 21:00</div>
-                <div class="days">Sat 6/12 15:00, 21:00</div>
-                <div class="days">Sun 7/12 14:00, 21:00</div>
+                <div class="days">
+                    <span class="day-label">Mon 1/12</span>
+                    <span class="day-times">18:00, 21:00</span>
+                </div>
+                <div class="days">
+                    <span class="day-label">Tue 2/12</span>
+                    <span class="day-times">18:00, 21:00</span>
+                </div>
+                <div class="days">
+                    <span class="day-label">Wed 3/12</span>
+                    <span class="day-times">18:00, 21:00</span>
+                </div>
+                <div class="days">
+                    <span class="day-label">Thu 4/12</span>
+                    <span class="day-times">18:00, 21:00</span>
+                </div>
+                <div class="days">
+                    <span class="day-label">Fri 5/12</span>
+                    <span class="day-times">19:00, 21:00</span>
+                </div>
+                <div class="days">
+                    <span class="day-label">Sat 6/12</span>
+                    <span class="day-times">15:00, 21:00</span>
+                </div>
+                <div class="days">
+                    <span class="day-label">Sun 7/12</span>
+                    <span class="day-times">14:00, 21:00</span>
+                </div>
             </div>
+
             <br>
             <p>Swedish subtitle</p>
             <p>VIP- Expirience</p>
