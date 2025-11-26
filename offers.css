@@ -1,7 +1,9 @@
 .container {
   display: flex;
   flex-direction: column; 
-  width: fit-content;
+  /* width: fit-content; */
+  justify-content: center;
+  margin-right: 10%;
 }
 
 .rectangle {
@@ -21,19 +23,30 @@
 }
 
 .img {
-  width: 250px;              
-  height: 160px;
-  object-fit: cover;         /* ← gör att alla bilder får samma form utan att se konstiga ut */
+  width: 100vw;              
+  height: 60vw;
+  object-fit: contain;         /* ← gör att alla bilder får samma form utan att se konstiga ut */
   border-radius: 6px;       
 }
 
-@media (max-width: 425px) {
-  .container {
-    flex-direction: column;
+@media (max-width: 4340px) {
 
-    .img {
-  width: 273px;
-  height: 100px;
-}
+  .rectangle {
+    flex-direction: column;   /* Bild över text */
+    align-items: flex-start;  /* Texten börjar till vänster */
+    height: auto;             /* Låt rutan bli så hög som behövs */
+    width: 100%;              /* Fyll mobilens bredd */
+    padding: 10px;            /* Lite luftigare */
+  }
+
+  .img {
+    width: 100%;              /* Bilden fyller hela bredden */
+    height: auto;             /* Behåll proportioner */
+    object-fit: contain;
+    border-radius: 6px;
+  }
+
+  .container {
+    width: 100%;
   }
 }

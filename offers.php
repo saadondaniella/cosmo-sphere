@@ -17,22 +17,17 @@
 
     <div class="rectangle">
         <img class="img" src="/pictures/download.jpeg" alt="">
-        <p>Popcorn n Soda</p><br>
+        <p>Popcorn n Soda</p>
         <p>Enjoy the movie with the classic popcorn and soda.</p>
     </div>
 
     <div class="rectangle">
         <img class="img" src="/pictures/chips-utanbakgrund.png" alt="">
-        <p>Chips n Soda</p><br>
+        <p>Chips n Soda</p>
         <p>Enjoy with the the movie and lean back.</p>
     </div>
 
-    <div class="rectangle">
-        <img class="img" src="/" alt="">
-        <p>Free flow</p>
-    </div>
-
-</div>
+ 
 
 </body>
 
