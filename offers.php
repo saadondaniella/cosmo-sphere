@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . "/header.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,21 +13,26 @@ require __DIR__ . "/header.php";
 
 <body>
 
-    <div class="container">
+<div class="container">
+
+    <div class="rectangle">
+        <img class="img" src="/pictures/download.jpeg" alt="">
+        <p>Popcorn n Soda</p><br>
+        <p>Enjoy the movie with the classic popcorn and soda.</p>
     </div>
-    <img src="/pictures/b0007ea8-1b92-4314-be11-19bb71de5393.jpeg" alt="pink planet">
 
-    <div class="rectangle">Popcorn n Soda
+    <div class="rectangle">
+        <img class="img" src="/pictures/chips-utanbakgrund.png" alt="">
+        <p>Chips n Soda</p><br>
+        <p>Enjoy with the the movie and lean back.</p>
     </div>
-    <img src="/pictures/download.jpeg" alt="popcorn">
 
-    <div class="rectangle">Chips n Soda
+    <div class="rectangle">
+        <img class="img" src="/" alt="">
+        <p>Free flow</p>
     </div>
-    <img src="/pictures/enhanced-buzz-32759-1375096393-12.webp" alt="chips">
 
-    <div class="ff"> Free flow</div>
-
-    <img src="" alt="">
+</div>
 
 </body>
 

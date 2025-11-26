@@ -1,29 +1,39 @@
 .container {
   display: flex;
-  box-sizing: border-box;
-  background-color: var(--darkblue-color);
+  flex-direction: column; 
   width: fit-content;
-  height: fit-content;
 }
 
 .rectangle {
-  height: 180px;
+  display: flex;            
+  align-items: center;      
+  gap: 20px;                
+  padding: 10px 0;
   width: 996px;
-  background-color: var(--darkblue-color);
+  height: 180px;
   font-size: 18px;
+  color: white;
 }
+
 .rectangle:hover {
   background-color: var(--pink-color);
   font-size: 18px;
 }
 
 .img {
-  width: 273px;
-  height: 180px;
+  width: 250px;              
+  height: 160px;
+  object-fit: cover;         /* ← gör att alla bilder får samma form utan att se konstiga ut */
+  border-radius: 6px;       
 }
 
 @media (max-width: 425px) {
   .container {
     flex-direction: column;
+
+    .img {
+  width: 273px;
+  height: 100px;
+}
   }
 }
