@@ -2,35 +2,47 @@
 
     <div class="footer-list">
         <ul>
-            <li class="title-footer"> Follow us</li><br>
+            <li class="title-footer">
+                <span>Follow us</span>
+                <img src="/pictures/PIL-blå.png" alt="" class="footer-arrow" />
+            </li>
             <li><a href="https://www.facebook.com/">Facebook</a></li>
             <li><a href="https://www.tiktok.com/">TikTok</a></li>
             <li><a href="https://www.instagram.com">Instagram</a></li>
             <li><a href="https://se.linkedin.com/">Linkedin</a></li>
         </ul>
     </div>
+
     <div class="footer-list">
         <ul>
-            <li class="title-footer">General information</li><br>
-            <li>Adress: Kungsgatan 40
-                414 55 Göteborg</li>
+            <li class="title-footer">
+                <span>General information</span>
+                <img src="/pictures/PIL-blå.png" alt="" class="footer-arrow" />
+            </li>
+            <li>Adress: Kungsgatan 40 414 55 Göteborg</li>
             <li>Phone: +46 745-0033</li>
-            <li>email: cosmo.sphere@cinema.se</li>
-            <li>Costum service</li>
-        </ul>
-    </div>
-    <div class="footer-list">
-        <ul>
-            <li class="title-footer">Resources</li><br>
-
-            <li> FAQs</li>
-            <li>Newsletter Signup</li>
+            <li>Email: cosmo.sphere@cinema.se</li>
+            <li>Customer service</li>
         </ul>
     </div>
 
     <div class="footer-list">
         <ul>
-            <li class="title-footer"> About us </li><br>
+            <li class="title-footer">
+                <span>Resources</span>
+                <img src="/pictures/PIL-blå.png" alt="" class="footer-arrow" />
+            </li>
+            <li>FAQs</li>
+            <li>Newsletter signup</li>
+        </ul>
+    </div>
+
+    <div class="footer-list">
+        <ul>
+            <li class="title-footer">
+                <span>About us</span>
+                <img src="/pictures/PIL-blå.png" alt="" class="footer-arrow" />
+            </li>
             <li>About</li>
             <li>Contact us</li>
             <li>Studio</li>
@@ -39,6 +51,7 @@
             <li>Investors</li>
         </ul>
     </div>
+
 </section>
 
 <img src="/pictures/WALL_Elila.png" alt="wall-e" class="moving-image">
@@ -55,6 +68,21 @@
             hiddenMovies.forEach(item => item.classList.remove("show"));
             this.textContent = "Show more";
         }
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const titles = document.querySelectorAll(".title-footer");
+
+        titles.forEach((title) => {
+            title.addEventListener("click", () => {
+                const list = title.closest(".footer-list");
+
+                // toggla open
+                list.classList.toggle("footer-list--open");
+            });
+        });
     });
 </script>
 
