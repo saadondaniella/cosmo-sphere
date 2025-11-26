@@ -91,8 +91,7 @@ require __DIR__ . "/Header.php"; ?>
         <div class="coming-card-text">
             <p class="coming-card-quote">"WHAT COMES NEXT WILL CHANGE EVERYTHING."</p>
             <h3 class="coming-card-title">BEYOND THIS POINT</h3>
-            <p class="coming-card-meta">
-                ON SCREENS 12 MARCH<br />
+            <p class="coming-card-meta">ON SCREENS 12 MARCH<br />
                 A NEW REALITY AWAITS – BOOK NOW.
             </p>
             <button class="coming-button">More info</button>
