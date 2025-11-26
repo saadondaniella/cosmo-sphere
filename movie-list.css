@@ -4,6 +4,7 @@
   align-items: stretch;
   grid-template-columns: repeat(3, 1fr);
   padding: 2rem;
+  justify-content: center;
 }
 
 .movie-item {

@@ -8,25 +8,25 @@ require __DIR__ . "/Header.php"; ?>
 </article>
 
 <section class="feature-film">
-    <div class="feature-film__frame">
+    <div class="feature-film-frame">
         <img
             src="/pictures/blade-runner-old.webp"
             alt="Blade Runner poster"
-            class="feature-film__poster" />
+            class="feature-film-poster" />
     </div>
 
-    <div class="feature-film__overlay">
-        <p class="feature-film__label">A classicer:</p>
-        <h3 class="feature-film__headline">
+    <div class="feature-film-overlay">
+        <p class="feature-film-label">A classicer:</p>
+        <h3 class="feature-film-headline">
             BLADE RUNNER – The future we still don’t understand.
         </h3>
-        <div class="feature-film__actions">
-            <a href="movie.php" class="feature-btn feature-btn--outline">Watch trailer</a>
-            <a href="movie.php" class="feature-btn feature-btn--filled">Get tickets</a>
+        <div class="feature-film-actions">
+            <a href="movie.php" class="headerButton">Watch trailer</a>
+            <a href="movie.php" class="headerButton">Get tickets</a>
         </div>
     </div>
 </section>
-
+<h2 id="movie-list-header">Current movies</h2>
 <?php require __DIR__ . "/movie-list.php"; ?>
 
 <h2 id="header-karusell">Get the full experiance of Cosmo Sphere</h2>
@@ -60,7 +60,7 @@ require __DIR__ . "/Header.php"; ?>
             <p>Bring your date under the stars and get a romantic experiance in the sphere</p>
         </article>
         <article class="card">
-            <img src="/pictures/chips.webp" />
+            <img src="/pictures/chips-utanbakgrund.png" />
             <h2>Offers</h2>
             <p>Take advantage of our incredible offers on snacks and treats</p>
         </article>
@@ -84,7 +84,63 @@ require __DIR__ . "/Header.php"; ?>
     </div>
 </div>
 
+<section class="coming-soon">
+    <h2 class="coming-soon-heading">COMMING SOON!</h2>
 
+    <article class="coming-card">
+        <div class="coming-card-text">
+            <p class="coming-card-quote">"WHAT COMES NEXT WILL CHANGE EVERYTHING."</p>
+            <h3 class="coming-card-title">BEYOND THIS POINT</h3>
+            <p class="coming-card-meta">
+                ON SCREENS 12 MARCH<br />
+                A NEW REALITY AWAITS – BOOK NOW.
+            </p>
+            <button class="coming-button">More info</button>
+        </div>
+        <div class="coming-card-image-wrapper">
+            <img
+                src="/pictures/beyondthispoint.jpg"
+                alt="Sci-fi control room"
+                class="coming-image" />
+        </div>
+    </article>
+
+    <article class="coming-card">
+        <div class="coming-card-text">
+            <p class="coming-card-quote">“SOMETHING IS COMING. AND IT’S NOT HUMAN.”</p>
+            <h3 class="coming-card-title">NO TOMORROW</h3>
+            <p class="coming-card-meta">
+                ON SCREENS 1 JANUARY<br />
+                DISCOVER WHAT’S COMING.
+            </p>
+            <button class="coming-button">More info</button>
+        </div>
+        <div class="coming-card-image-wrapper">
+            <img
+                src="/pictures/echoesoftomorrow.jpg"
+                alt="Sci-fi portal"
+                class="coming-image" />
+        </div>
+    </article>
+
+    <article class="coming-card">
+        <div class="coming-card-text">
+            <p class="coming-card-quote">"NOT ALL WORLDS SHOULD BE DISCOVERED."</p>
+            <h3 class="coming-card-title">THE PARALLAX CODE</h3>
+            <p class="coming-card-meta">
+                ON SCREENS 5 FEBRUARY<br />
+                ENTER EARLY. IF YOU DARE.
+            </p>
+            <button class="coming-button">More info</button>
+        </div>
+        <div class="coming-card-image-wrapper">
+            <img
+                src="/pictures/theparallaxcode.jpg"
+                alt="Sci-fi ship at night"
+                class="coming-image" />
+        </div>
+    </article>
+</section>
 <?php
 require __DIR__ . "/footer.php";
 ?>
