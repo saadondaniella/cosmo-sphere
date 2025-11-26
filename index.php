@@ -26,6 +26,7 @@ require __DIR__ . "/Header.php"; ?>
         </div>
     </div>
 </section>
+<?php require __DIR__ . "/offers.php"; ?> 
 <h2 id="movie-list-header">Current movies</h2>
 <?php require __DIR__ . "/movie-list.php"; ?>
 
