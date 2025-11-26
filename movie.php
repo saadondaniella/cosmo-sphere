@@ -30,21 +30,25 @@ require __DIR__ . "/backgroundstarts.php"; ?>
         </nav>
     </header>
 
-    <article class="movie-card">
-        <div class="movie-info">
-            <ul>
-                <h2>Blade Runner 2049</h2>
-                <li>2017</li>
-                <li>Age: 15</li>
-                <li>2h 44m</li>
-                <li>IMDB rating 8/10</li>
-            </ul>
-        </div>
+    <section class="movie-hero">
+        <img
+            src="pictures/movie1.jpeg"
+            alt="Blade Runner 2049 poster"
+            class="movie-hero__image" />
 
-        <div class="movie-image">
-            <img src="pictures/movie1.jpeg" alt="Blade Runner 2049 poster">
+        <div class="movie-hero__content">
+            <h2 class="movie-hero__title">Blade Runner 2049</h2>
+
+            <div class="movie-hero__info">
+                <ul>
+                    <li>2017</li>
+                    <li>Age: 15</li>
+                    <li>2h 44m</li>
+                    <li>IMDB: 8/10</li>
+                </ul>
+            </div>
         </div>
-    </article>
+    </section>
     <section class="genrebox">
         <div>Action epic</div>
         <div>AI</div>
@@ -67,6 +71,7 @@ require __DIR__ . "/backgroundstarts.php"; ?>
             <p> Director: Denis Vileneuve</p>
 
             <p>Stars: Ryan Gosling, Michael Green, Philip k Dick</p><br>
+
             <p class="choose-date-title">
                 Get tickets <br>
                 <span>Choose the date:</span>
@@ -107,6 +112,32 @@ require __DIR__ . "/backgroundstarts.php"; ?>
             <p>Swedish subtitle</p>
             <p>VIP- Expirience</p>
     </article>
+
+    <section class="reviews-hero">
+        <img
+            src="/pictures/bladerunner.jpg"
+            alt="Blade Runner 2049 Cast"
+            class="reviews-hero__image" />
+
+        <div class="reviews-hero__content">
+            <h2 class="reviews-title">Blade Runner 2049 – Critical Acclaim</h2>
+
+            <div class="review">
+                <p class="quote">“A breathtaking masterpiece of modern sci-fi.”</p>
+                <span class="critic">— The NeoTimes</span>
+            </div>
+
+            <div class="review">
+                <p class="quote">“Visually stunning and emotionally haunting.”</p>
+                <span class="critic">— Cinema Pulse</span>
+            </div>
+
+            <div class="review">
+                <p class="quote">“The strongest cyberpunk film since the original.”</p>
+                <span class="critic">— FutureFilm Review</span>
+            </div>
+        </div>
+    </section>
     <section class="similar-movies">
         <h2>More movies like this</h2>
 
