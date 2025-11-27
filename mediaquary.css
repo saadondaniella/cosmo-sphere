@@ -1,8 +1,10 @@
 @media (min-width: 768px) {
-  .mobile-header {
+  .logga {
     display: none;
   }
-
+  .mobile-image {
+    display: none;
+  }
   .site-header {
     display: block;
   }

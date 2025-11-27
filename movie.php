@@ -1,171 +1,145 @@
 <?php
-require __DIR__ . "/backgroundstarts.php"; ?>
+require __DIR__ . "/backgroundstarts.php";
+require __DIR__ . "/Header.php";
 
-<!DOCTYPE html>
-<html lang="en">
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cosmo Sphere Cinema</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+<section class="movie-hero">
+    <img
+        src="pictures/movie1.jpeg"
+        alt="Blade Runner 2049 poster"
+        class="movie-hero__image" />
 
-<body>
-    <header class="mobile-header">
-        <a href="index.php"> <img class="mobile-image" src="/pictures/sidebar.png" alt="Liten menyikon"></a><br>
-    </header>
-    <header class="site-header">
-        <nav class="navbar" aria-label="Main">
-            <ul class="navlist">
-                <li><a href="/movie.php">Movies</a></li>
-                <li><a href="/index.php">Tickets</a></li>
-                <li><a href="/index.php">Premium</a></li>
-                <li><a href="/index.php">Offers</a></li>
-                <li><a href="/index.php">Shop</a></li>
+    <div class="movie-hero__content">
+        <h2 class="movie-hero__title">Blade Runner 2049</h2>
+
+        <div class="movie-hero__info">
+            <ul>
+                <li>2017</li>
+                <li>Age: 15</li>
+                <li>2h 44m</li>
+                <li>IMDB: 8/10</li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </div>
+</section>
+<section class="genrebox">
+    <div>Action epic</div>
+    <div>AI</div>
+    <div>Cyber Thriller</div>
+    <div>Cyber Punk</div>
+    <div>Dystopian Sci-Fi</div>
+    <div>Sci-Fi epic</div>
+</section>
 
-    <section class="movie-hero">
-        <img
-            src="pictures/movie1.jpeg"
-            alt="Blade Runner 2049 poster"
-            class="movie-hero__image" />
+<article class="movie-description">
+    <div class="about-movie">
+        <p>Thirty years after the events of the first film, the world of Blade Runner 2049 is a bleak and beautiful vision of
+            the future — neon-lit cities, synthetic beings, and fading memories.<br><br>
+            Officer K, a new generation Blade Runner for the Los Angeles Police Department, uncovers a long-buried secret that
+            could shatter the fragile balance between humans and replicants. <br><br>
+            His investigation leads him on a haunting journey to track down Rick Deckard, a former Blade Runner who has been
+            missing for three decades.
+        </p>
 
-        <div class="movie-hero__content">
-            <h2 class="movie-hero__title">Blade Runner 2049</h2>
+        <p> Director: Denis Vileneuve</p>
 
-            <div class="movie-hero__info">
-                <ul>
-                    <li>2017</li>
-                    <li>Age: 15</li>
-                    <li>2h 44m</li>
-                    <li>IMDB: 8/10</li>
-                </ul>
+        <p>Stars: Ryan Gosling, Michael Green, Philip k Dick</p><br>
+
+        <p class="choose-date-title">
+            Get tickets <br>
+            <span>Choose the date:</span>
+        </p>
+
+        <div class="time-tablet">
+            <div class="days">
+                <span class="day-label">Mon 1/12</span>
+                <span class="day-times">18:00, 21:00</span>
+            </div>
+            <div class="days">
+                <span class="day-label">Tue 2/12</span>
+                <span class="day-times">18:00, 21:00</span>
+            </div>
+            <div class="days">
+                <span class="day-label">Wed 3/12</span>
+                <span class="day-times">18:00, 21:00</span>
+            </div>
+            <div class="days">
+                <span class="day-label">Thu 4/12</span>
+                <span class="day-times">18:00, 21:00</span>
+            </div>
+            <div class="days">
+                <span class="day-label">Fri 5/12</span>
+                <span class="day-times">19:00, 21:00</span>
+            </div>
+            <div class="days">
+                <span class="day-label">Sat 6/12</span>
+                <span class="day-times">15:00, 21:00</span>
+            </div>
+            <div class="days">
+                <span class="day-label">Sun 7/12</span>
+                <span class="day-times">14:00, 21:00</span>
             </div>
         </div>
-    </section>
-    <section class="genrebox">
-        <div>Action epic</div>
-        <div>AI</div>
-        <div>Cyber Thriller</div>
-        <div>Cyber Punk</div>
-        <div>Dystopian Sci-Fi</div>
-        <div>Sci-Fi epic</div>
-    </section>
 
-    <article class="movie-description">
-        <div class="about-movie">
-            <p>Thirty years after the events of the first film, the world of Blade Runner 2049 is a bleak and beautiful vision of
-                the future — neon-lit cities, synthetic beings, and fading memories.<br><br>
-                Officer K, a new generation Blade Runner for the Los Angeles Police Department, uncovers a long-buried secret that
-                could shatter the fragile balance between humans and replicants. <br><br>
-                His investigation leads him on a haunting journey to track down Rick Deckard, a former Blade Runner who has been
-                missing for three decades.
-            </p>
+        <br>
+        <p>Swedish subtitle</p>
+        <p>VIP- Expirience</p>
+</article>
 
-            <p> Director: Denis Vileneuve</p>
+<section class="reviews-hero">
+    <img
+        src="/pictures/bladerunner.jpg"
+        alt="Blade Runner 2049 Cast"
+        class="reviews-hero__image" />
 
-            <p>Stars: Ryan Gosling, Michael Green, Philip k Dick</p><br>
+    <div class="reviews-hero__content">
+        <h2 class="reviews-title">Blade Runner 2049 – Critical Acclaim</h2>
 
-            <p class="choose-date-title">
-                Get tickets <br>
-                <span>Choose the date:</span>
-            </p>
-
-            <div class="time-tablet">
-                <div class="days">
-                    <span class="day-label">Mon 1/12</span>
-                    <span class="day-times">18:00, 21:00</span>
-                </div>
-                <div class="days">
-                    <span class="day-label">Tue 2/12</span>
-                    <span class="day-times">18:00, 21:00</span>
-                </div>
-                <div class="days">
-                    <span class="day-label">Wed 3/12</span>
-                    <span class="day-times">18:00, 21:00</span>
-                </div>
-                <div class="days">
-                    <span class="day-label">Thu 4/12</span>
-                    <span class="day-times">18:00, 21:00</span>
-                </div>
-                <div class="days">
-                    <span class="day-label">Fri 5/12</span>
-                    <span class="day-times">19:00, 21:00</span>
-                </div>
-                <div class="days">
-                    <span class="day-label">Sat 6/12</span>
-                    <span class="day-times">15:00, 21:00</span>
-                </div>
-                <div class="days">
-                    <span class="day-label">Sun 7/12</span>
-                    <span class="day-times">14:00, 21:00</span>
-                </div>
-            </div>
-
-            <br>
-            <p>Swedish subtitle</p>
-            <p>VIP- Expirience</p>
-    </article>
-
-    <section class="reviews-hero">
-        <img
-            src="/pictures/bladerunner.jpg"
-            alt="Blade Runner 2049 Cast"
-            class="reviews-hero__image" />
-
-        <div class="reviews-hero__content">
-            <h2 class="reviews-title">Blade Runner 2049 – Critical Acclaim</h2>
-
-            <div class="review">
-                <p class="quote">“A breathtaking masterpiece of modern sci-fi.”</p>
-                <span class="critic">— The NeoTimes</span>
-            </div>
-
-            <div class="review">
-                <p class="quote">“Visually stunning and emotionally haunting.”</p>
-                <span class="critic">— Cinema Pulse</span>
-            </div>
-
-            <div class="review">
-                <p class="quote">“The strongest cyberpunk film since the original.”</p>
-                <span class="critic">— FutureFilm Review</span>
-            </div>
+        <div class="review">
+            <p class="quote">“A breathtaking masterpiece of modern sci-fi.”</p>
+            <span class="critic">— The NeoTimes</span>
         </div>
-    </section>
-    <section class="similar-movies">
-        <h2>More movies like this</h2>
 
-        <div class="similar-track">
-            <div class="similar-card">
-                <img src="/pictures/Jurassic Park 2.jpg" alt="Jurassic Park 2">
-                <p class="similar-title">Jurassic Park 2</p>
-            </div>
-
-
-            <div class="similar-card">
-                <img src="/pictures/Dune.jpg" alt="Dune">
-                <p class="similar-title">Dune</p>
-            </div>
-            <div class="similar-card">
-                <img src="/pictures/Terminator 1.jpg" alt="Terminator 1">
-                <p class="similar-title">Terminator</p>
-            </div>
-
-            <div class="similar-card">
-                <img src="/pictures/Preadator badlands.jpg" alt="Predator Badlands">
-                <p class="similar-title">Predator Badlands</p>
-            </div>
-            <div class="similar-card">
-                <img src="/pictures/Terminator 3.jpg" alt="Terminator 3">
-                <p class="similar-title">Terminator 3</p>
-            </div>
-
+        <div class="review">
+            <p class="quote">“Visually stunning and emotionally haunting.”</p>
+            <span class="critic">— Cinema Pulse</span>
         </div>
-    </section>
-    </main>
+
+        <div class="review">
+            <p class="quote">“The strongest cyberpunk film since the original.”</p>
+            <span class="critic">— FutureFilm Review</span>
+        </div>
+    </div>
+</section>
+<section class="similar-movies">
+    <h2>More movies like this</h2>
+
+    <div class="similar-track">
+        <div class="similar-card">
+            <img src="/pictures/Jurassic Park 2.jpg" alt="Jurassic Park 2">
+            <p class="similar-title">Jurassic Park 2</p>
+        </div>
+
+
+        <div class="similar-card">
+            <img src="/pictures/Dune.jpg" alt="Dune">
+            <p class="similar-title">Dune</p>
+        </div>
+        <div class="similar-card">
+            <img src="/pictures/Terminator 1.jpg" alt="Terminator 1">
+            <p class="similar-title">Terminator</p>
+        </div>
+
+        <div class="similar-card">
+            <img src="/pictures/Preadator badlands.jpg" alt="Predator Badlands">
+            <p class="similar-title">Predator Badlands</p>
+        </div>
+        <div class="similar-card">
+            <img src="/pictures/Terminator 3.jpg" alt="Terminator 3">
+            <p class="similar-title">Terminator 3</p>
+        </div>
+
+    </div>
+</section>
+</main>
