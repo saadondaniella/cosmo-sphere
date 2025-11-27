@@ -16,12 +16,12 @@
     <div class="footer-list">
         <ul>
             <li class="title-footer">
-                <span>General information</span>
+                <span>Information</span>
                 <img src="/pictures/PIL-blå.png" alt="" class="footer-arrow" />
             </li>
-            <li>Adress: Kungsgatan 40 414 55 Göteborg</li>
-            <li>Phone: +46 745-0033</li>
-            <li>Email: cosmo.sphere@cinema.se</li>
+            <li>Kungsgatan 40 414 55 Göteborg</li>
+            <li> +46 745-0033</li>
+            <li>cosmo.sphere@cinema.se</li>
             <li>Customer service</li>
         </ul>
     </div>
@@ -55,21 +55,6 @@
 </section>
 
 <img src="/pictures/WALL_Elila.png" alt="wall-e" class="moving-image">
-
-<script>
-    document.getElementById("show-more").addEventListener("click", function() {
-        const hiddenMovies = document.querySelectorAll(".movie-item:nth-child(n+7)");
-        const isShowingMore = this.classList.toggle("expanded");
-
-        if (isShowingMore) {
-            hiddenMovies.forEach(item => item.classList.add("show"));
-            this.textContent = "Show less";
-        } else {
-            hiddenMovies.forEach(item => item.classList.remove("show"));
-            this.textContent = "Show more";
-        }
-    });
-</script>
 
 <script>
     document.addEventListener("DOMContentLoaded", () => {

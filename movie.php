@@ -169,5 +169,3 @@ require __DIR__ . "/backgroundstarts.php"; ?>
         </div>
     </section>
     </main>
-    <?php
-    require __DIR__ . "/footer.php";

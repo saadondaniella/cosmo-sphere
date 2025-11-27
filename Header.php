@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="movie-list.css">
+    <link rel="stylesheet" href="mediaquary.css">
 </head>
 
 <body>
