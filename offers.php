@@ -24,7 +24,7 @@
     <div class="rectangle">
         <img class="img" src="/pictures/chips-utanbakgrund.png" alt="">
         <p>Chips n Soda</p>
-        <p>Enjoy with the the movie and lean back.</p>
+        <p>Enjoy the movie with the space themed chips and soda.</p>
     </div>
 
  

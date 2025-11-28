@@ -4,6 +4,7 @@
   /* width: fit-content; */
   justify-content: center;
   margin-right: 10%;
+  line-height: 1.2;
 }
 
 .rectangle {
@@ -15,6 +16,16 @@
   height: 180px;
   font-size: 18px;
   color: white;
+  line-height: 1.3;
+}
+
+.rectangle p {
+  margin: 0;
+  padding: 0;
+}
+
+.rectangle p + p {
+  margin-top: 8px; /* Justera detta värde (5px, 10px, etc.) */
 }
 
 .rectangle:hover {
@@ -23,30 +34,24 @@
 }
 
 .img {
-  width: 100vw;              
-  height: 60vw;
-  object-fit: contain;         /* ← gör att alla bilder får samma form utan att se konstiga ut */
-  border-radius: 6px;       
+  width: 250px;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 6px;
 }
 
-@media (max-width: 4340px) {
+@media (max-width: 600px) {
 
   .rectangle {
     flex-direction: column;   /* Bild över text */
-    align-items: flex-start;  /* Texten börjar till vänster */
-    height: auto;             /* Låt rutan bli så hög som behövs */
-    width: 100%;              /* Fyll mobilens bredd */
-    padding: 10px;            /* Lite luftigare */
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+    padding: 10px;
   }
 
   .img {
-    width: 100%;              /* Bilden fyller hela bredden */
-    height: auto;             /* Behåll proportioner */
-    object-fit: contain;
-    border-radius: 6px;
-  }
-
-  .container {
-    width: 100%;
+    width: 100%;       /* Bilden blir lagom på mobil */
+    height: auto;
   }
 }
