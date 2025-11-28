@@ -110,13 +110,10 @@ ul {
     0 0 20px var(--pink-color), 0 0 40px var(--pink-color);
 }
 
-/* Logga (desktop) */
 .logga {
   display: block;
-  margin: 0 auto;
-  height: auto;
-  width: 600px;
-  max-width: 90vw;
+  margin: 20px auto;
+  height: 65vh;
 }
 
 .intro-text h1 {

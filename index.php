@@ -2,6 +2,8 @@
 require __DIR__ . "/backgroundstarts.php";
 require __DIR__ . "/Header.php"; ?>
 
+<img class="logga" src="/pictures/LOGGA.png" alt="Logga">
+
 <article class="intro-text">
     <h1>Welcome <br>to a world full of Sci-Fi.</h1>
     <p>Here you will find all the old and the latest movies. from single films to trilogies</p>

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="movie-list.css">
     <link rel="stylesheet" href="mediaquary.css">
-    <link rel="stylesheet" href="offer.css">
+    <link rel="stylesheet" href="offers.css">
 </head>
 
 <body class="home">
@@ -30,4 +30,3 @@
             </ul>
         </nav>
     </header>
-    <img class="logga" src="/pictures/LOGGA.png" alt="Cosmo Sphere logga">
