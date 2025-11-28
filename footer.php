@@ -56,35 +56,9 @@
 
 <img src="/pictures/WALL_Elila.png" alt="wall-e" class="moving-image">
 
-<script>
-    document.getElementById("show-more").addEventListener("click", function() {
-        const hiddenMovies = document.querySelectorAll(".movie-item:nth-child(n+7)");
-        const isShowingMore = this.classList.toggle("expanded");
+<script src="script.js"></script>
 
-        if (isShowingMore) {
-            hiddenMovies.forEach((item) => item.classList.add("show"));
-            this.textContent = "Show less";
-        } else {
-            hiddenMovies.forEach((item) => item.classList.remove("show"));
-            this.textContent = "Show more";
-        }
-    });
-</script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const titles = document.querySelectorAll(".title-footer");
-
-        titles.forEach((title) => {
-            title.addEventListener("click", () => {
-                const list = title.closest(".footer-list");
-
-                // toggla open
-                list.classList.toggle("footer-list--open");
-            });
-        });
-    });
-</script>
 
 </body>
 
