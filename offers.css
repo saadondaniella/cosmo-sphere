@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   /* width: fit-content; */
   justify-content: center;
   margin-right: 10%;
@@ -8,9 +8,9 @@
 }
 
 .rectangle {
-  display: flex;            
-  align-items: center;      
-  gap: 20px;                
+  display: flex;
+  align-items: center;
+  gap: 20px;
   padding: 10px 0;
   width: 996px;
   height: 180px;
@@ -41,9 +41,8 @@
 }
 
 @media (max-width: 600px) {
-
   .rectangle {
-    flex-direction: column;   /* Bild över text */
+    flex-direction: column; /* Bild över text */
     align-items: flex-start;
     height: auto;
     width: 100%;
@@ -51,7 +50,7 @@
   }
 
   .img {
-    width: 100%;       /* Bilden blir lagom på mobil */
+    width: 100%; /* Bilden blir lagom på mobil */
     height: auto;
   }
 }

@@ -124,7 +124,7 @@
 
   .coming-soon {
     max-width: 1200px;
-    margin: 4rem auto;
+    margin: 0 auto;
     padding: 0 1rem;
     display: flex;
     flex-direction: column;
@@ -140,7 +140,7 @@
   }
   .coming-heading {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     font-size: 3rem;
   }
   .coming-card {
@@ -260,8 +260,10 @@
     }
   }
   .reviews-hero {
-    min-height: 70vh;
+    height: 80vh;
     width: 90vw;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   .reviews-hero__content {
