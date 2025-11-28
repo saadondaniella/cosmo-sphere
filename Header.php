@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="movie-list.css">
     <link rel="stylesheet" href="mediaquary.css">
+    <link rel="stylesheet" href="offer.css">
 </head>
 
-<body>
+<body class="home">
     <header class="mobile-header">
         <a href="movie.php"> <img class="mobile-image" src="/pictures/Sidebar.png" alt="Liten menyikon"></a>
     </header>
