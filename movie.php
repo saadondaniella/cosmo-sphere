@@ -4,16 +4,16 @@ require __DIR__ . "/Header.php";
 
 ?>
 
-<section class="movie-hero">
+<section class="bladeRunner-movie">
     <img
         src="pictures/movie1.jpeg"
         alt="Blade Runner 2049 poster"
-        class="movie-hero__image" />
+        class="bladeRunner-movieimg" />
 
-    <div class="movie-hero__content">
-        <h2 class="movie-hero__title">Blade Runner 2049</h2>
+    <div class="bladeRunner-movie-content">
+        <h2 class="bladeRunner-movie-title">Blade Runner 2049</h2>
 
-        <div class="movie-hero__info">
+        <div class="bladeRunner-movie-info">
             <ul>
                 <li>2017</li>
                 <li>Age: 15</li>
@@ -32,7 +32,7 @@ require __DIR__ . "/Header.php";
     <div>Sci-Fi epic</div>
 </section>
 
-<article class="movie-description">
+<article class="bladeRunner-movie-description">
     <div class="about-movie">
         <p>Thirty years after the events of the first film, the world of Blade Runner 2049 is a bleak and beautiful vision of
             the future — neon-lit cities, synthetic beings, and fading memories.<br><br>
@@ -42,58 +42,65 @@ require __DIR__ . "/Header.php";
             missing for three decades.
         </p>
 
-        <p> Director: Denis Vileneuve</p>
-
-        <p>Stars: Ryan Gosling, Michael Green, Philip k Dick</p><br>
-
-        <p class="choose-date-title">
-            Get tickets <br>
-            <span>Choose the date:</span>
-        </p>
-
-        <div class="time-tablet">
-            <div class="days">
-                <span class="day-label">Mon 1/12</span>
-                <span class="day-times">18:00, 21:00</span>
-            </div>
-            <div class="days">
-                <span class="day-label">Tue 2/12</span>
-                <span class="day-times">18:00, 21:00</span>
-            </div>
-            <div class="days">
-                <span class="day-label">Wed 3/12</span>
-                <span class="day-times">18:00, 21:00</span>
-            </div>
-            <div class="days">
-                <span class="day-label">Thu 4/12</span>
-                <span class="day-times">18:00, 21:00</span>
-            </div>
-            <div class="days">
-                <span class="day-label">Fri 5/12</span>
-                <span class="day-times">19:00, 21:00</span>
-            </div>
-            <div class="days">
-                <span class="day-label">Sat 6/12</span>
-                <span class="day-times">15:00, 21:00</span>
-            </div>
-            <div class="days">
-                <span class="day-label">Sun 7/12</span>
-                <span class="day-times">14:00, 21:00</span>
-            </div>
-        </div>
-
-        <br>
-        <p>Swedish subtitle</p>
-        <p>VIP- Expirience</p>
+        <p>Director: Denis Vileneuve</p>
+        <p>Stars: Ryan Gosling, Michael Green, Philip k Dick</p>
+    </div>
 </article>
 
-<section class="reviews-hero">
+<div class="video-wrapper">
+    <iframe class="video"
+        src="https://www.youtube.com/embed/gCcx85zbxz4"
+        title="Blade Runner 2049"
+        frameborder="0"
+        allowfullscreen></iframe>
+</div>
+
+<p class="choose-date-title">
+    Get tickets <br>
+    <span>Choose the date:</span>
+</p>
+
+<div class="time-tablet">
+    <div class="days">
+        <span class="day-label">Mon 1/12</span>
+        <span class="day-times">18:00, 21:00</span>
+    </div>
+    <div class="days">
+        <span class="day-label">Tue 2/12</span>
+        <span class="day-times">18:00, 21:00</span>
+    </div>
+    <div class="days">
+        <span class="day-label">Wed 3/12</span>
+        <span class="day-times">18:00, 21:00</span>
+    </div>
+    <div class="days">
+        <span class="day-label">Thu 4/12</span>
+        <span class="day-times">18:00, 21:00</span>
+    </div>
+    <div class="days">
+        <span class="day-label">Fri 5/12</span>
+        <span class="day-times">19:00, 21:00</span>
+    </div>
+    <div class="days">
+        <span class="day-label">Sat 6/12</span>
+        <span class="day-times">15:00, 21:00</span>
+    </div>
+    <div class="days">
+        <span class="day-label">Sun 7/12</span>
+        <span class="day-times">14:00, 21:00</span>
+    </div>
+</div>
+
+<p class="subtitle">Swedish subtitle</p>
+<p class="vip">VIP- Expirience</p>
+
+<section class="reviewsPart">
     <img
         src="/pictures/bladerunner.jpg"
         alt="Blade Runner 2049 Cast"
-        class="reviews-hero__image" />
+        class="reviewsPart-image" />
 
-    <div class="reviews-hero__content">
+    <div class="reviewsPart-content">
         <h2 class="reviews-title">Blade Runner 2049 – Critical Acclaim</h2>
 
         <div class="review">
@@ -112,6 +119,7 @@ require __DIR__ . "/Header.php";
         </div>
     </div>
 </section>
+
 <section class="similar-movies">
     <h2>More movies like this</h2>
 
