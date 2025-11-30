@@ -684,7 +684,7 @@ button:hover {
   margin-bottom: 2rem;
   font-size: 1.5rem;
   letter-spacing: 0.12em;
-  color: var(--accent-color);
+  color: var(--blue-color);
 }
 
 .coming-grid {
@@ -726,7 +726,7 @@ button:hover {
 .coming-title {
   font-size: 1.3rem;
   font-weight: 700;
-  color: var(--text-color);
+  color: var(--blue-color);
 }
 
 .coming-meta {
@@ -753,7 +753,6 @@ button:hover {
   flex-direction: column;
   gap: 1.5rem;
   padding: 2rem 1.5rem 3rem;
-  background-color: var(--background-color);
 }
 
 .footer-list ul {
@@ -768,7 +767,7 @@ button:hover {
   align-items: center;
   font-size: 1.3rem;
   font-weight: bold;
-  color: var(--accent-color);
+  color: var(--blue-color);
   padding: 1rem 0;
   border-bottom: 2px solid var(--accent-color);
   cursor: pointer;
@@ -782,25 +781,25 @@ button:hover {
 
 .footer-list li {
   margin: 0.4rem 0;
-  color: var(--accent-color);
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
-
+.footer-list li:first-child {
+  color: var(--blue-color);
+}
 .footer-list a {
-  color: inherit;
   text-decoration: none;
+  color: var(--blue-color);
 }
 
-/* Göm allt utom rubriken */
 .footer-list li:not(.title-footer) {
   display: none;
 }
 
-/* Öppnad sektion: visa innehållet */
 .footer-list.footer-list--open li:not(.title-footer) {
   display: block;
 }
 
-/* Rotera pilen på öppen sektion */
 .footer-list.footer-list--open .footer-arrow {
   transform: rotate(180deg);
 }

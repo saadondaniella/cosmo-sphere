@@ -13,15 +13,12 @@ document.getElementById("show-more").addEventListener("click", function () {
   }
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const titles = document.querySelectorAll(".title-footer");
+const footerTitles = document.querySelectorAll(".title-footer");
 
-  titles.forEach((title) => {
-    title.addEventListener("click", () => {
-      const list = title.closest(".footer-list");
-
-      list.classList.toggle("footer-list--open");
-    });
+footerTitles.forEach((title) => {
+  title.addEventListener("click", () => {
+    const footerList = title.closest(".footer-list");
+    footerList.classList.toggle("footer-list--open");
   });
 });
 
