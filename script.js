@@ -13,14 +13,28 @@ document.getElementById("show-more").addEventListener("click", function () {
   }
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const titles = document.querySelectorAll(".title-footer");
+const footerTitles = document.querySelectorAll(".title-footer");
 
-  titles.forEach((title) => {
-    title.addEventListener("click", () => {
-      const list = title.closest(".footer-list");
+footerTitles.forEach((title) => {
+  title.addEventListener("click", () => {
+    const footerList = title.closest(".footer-list");
+    footerList.classList.toggle("footer-list--open");
+  });
+});
 
-      list.classList.toggle("footer-list--open");
-    });
+const scrollBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 20) {
+    scrollBtn.classList.add("show");
+  } else {
+    scrollBtn.classList.remove("show");
+  }
+});
+
+scrollBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
   });
 });

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="movie-list.css">
     <link rel="stylesheet" href="mediaquary.css">
     <link rel="stylesheet" href="offers.css">
+    <script src="scrollTop.js"></script>
 </head>
 
 <body class="home">

@@ -56,10 +56,11 @@
 
 <img src="/pictures/WALL_Elila.png" alt="wall-e" class="moving-image">
 
+<button id="scrollTopBtn" aria-label="Till toppen">
+    <img src="/pictures/comet-ikon.png" alt="Scrolla till toppen">
+</button>
+
 <script src="script.js"></script>
-
-
-
 </body>
 
 </html>

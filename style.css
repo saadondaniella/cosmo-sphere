@@ -113,7 +113,7 @@ ul {
 .logga {
   display: block;
   margin: 20px auto;
-  height: 65vh;
+  height: 60vh;
 }
 
 .intro-text h1 {
@@ -317,7 +317,6 @@ button:hover {
     0 0 5px var(--blue-color), 0 0 10px var(--blue-color);
 }
 
-/* MOVIE.PHP filmen */
 .movie-hero {
   max-width: 1200px;
   margin: 2.5rem auto;
@@ -479,7 +478,6 @@ button:hover {
   display: block;
 }
 
-/* OVERLAY CONTENT */
 .reviews-hero__content {
   position: absolute;
   inset: 0;
@@ -502,7 +500,6 @@ button:hover {
   text-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
 }
 
-/* REVIEW QUOTES */
 .review {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
@@ -615,8 +612,8 @@ button:hover {
   border: 1px solid black;
   scroll-snap-align: center;
 }
-*/ .similar-movies {
-  margin: 3rem 5%;
+.similar-movies {
+  margin: 0 auto;
 }
 
 .similar-movies h2 {
@@ -687,7 +684,7 @@ button:hover {
   margin-bottom: 2rem;
   font-size: 1.5rem;
   letter-spacing: 0.12em;
-  color: var(--accent-color);
+  color: var(--blue-color);
 }
 
 .coming-grid {
@@ -729,7 +726,7 @@ button:hover {
 .coming-title {
   font-size: 1.3rem;
   font-weight: 700;
-  color: var(--text-color);
+  color: var(--blue-color);
 }
 
 .coming-meta {
@@ -756,7 +753,6 @@ button:hover {
   flex-direction: column;
   gap: 1.5rem;
   padding: 2rem 1.5rem 3rem;
-  background-color: var(--background-color);
 }
 
 .footer-list ul {
@@ -771,7 +767,7 @@ button:hover {
   align-items: center;
   font-size: 1.3rem;
   font-weight: bold;
-  color: var(--accent-color);
+  color: var(--blue-color);
   padding: 1rem 0;
   border-bottom: 2px solid var(--accent-color);
   cursor: pointer;
@@ -785,25 +781,25 @@ button:hover {
 
 .footer-list li {
   margin: 0.4rem 0;
-  color: var(--accent-color);
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
-
+.footer-list li:first-child {
+  color: var(--blue-color);
+}
 .footer-list a {
-  color: inherit;
   text-decoration: none;
+  color: var(--blue-color);
 }
 
-/* Göm allt utom rubriken */
 .footer-list li:not(.title-footer) {
   display: none;
 }
 
-/* Öppnad sektion: visa innehållet */
 .footer-list.footer-list--open li:not(.title-footer) {
   display: block;
 }
 
-/* Rotera pilen på öppen sektion */
 .footer-list.footer-list--open .footer-arrow {
   transform: rotate(180deg);
 }
@@ -826,6 +822,7 @@ button:hover {
   }
 }
 
+<<<<<<< HEAD
 /* Dölj checkbox */
 #menu-toggle {
   display: none;
@@ -920,3 +917,40 @@ button:hover {
     transform: rotate(-45deg) translate(8px, -8px);
   }
 }
+=======
+#scrollTopBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 9999;
+}
+
+#scrollTopBtn img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#scrollTopBtn:hover {
+  transform: scale(1.18) translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#scrollTopBtn.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+>>>>>>> e709f5cd70ddb17d942e61bb9285ca4427e44c23
