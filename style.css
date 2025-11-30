@@ -822,7 +822,7 @@ button:hover {
   }
 }
 
-<<<<<<< HEAD
+
 /* Dölj checkbox */
 #menu-toggle {
   display: none;
@@ -917,7 +917,7 @@ button:hover {
     transform: rotate(-45deg) translate(8px, -8px);
   }
 }
-=======
+
 #scrollTopBtn {
   position: fixed;
   bottom: 25px;
@@ -953,4 +953,4 @@ button:hover {
   opacity: 1;
   pointer-events: auto;
 }
->>>>>>> e709f5cd70ddb17d942e61bb9285ca4427e44c23
+
