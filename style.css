@@ -825,3 +825,98 @@ button:hover {
     transform: rotate(365deg);
   }
 }
+
+/* Dölj checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger ikon - dölj på desktop */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 20;
+  gap: 5px;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: var(--pink-color); /* Ändra till din färg */
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+/* Desktop nav - visa normalt */
+.nav {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* MOBIL */
+@media (max-width: 768px) {
+  /* Visa hamburger */
+  .menu-icon {
+    display: flex;
+  }
+  
+  /* Dölj nav default */
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100vw;
+    height: 100vh; /* Hela skärmen */
+    background-color: rgba(0, 0, 0, 0.98);
+    border: none;
+    padding: 2rem 1rem;
+    z-index: 15;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .nav-links a {
+    font-size: 24px;
+    padding: 10px;
+  }
+  
+  /* Visa meny när checkbox markerad */
+  #menu-toggle:checked ~ .nav {
+    display: flex;
+  }
+  
+  /* Hamburger → X */
+  #menu-toggle:checked + .menu-icon .bar:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+  }
+
+  #menu-toggle:checked + .menu-icon .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #menu-toggle:checked + .menu-icon .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+  }
+}
