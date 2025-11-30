@@ -6,6 +6,7 @@ require __DIR__ . "/Header.php";
 
 <section class="bladeRunner-movie">
     <img
+        id="bladeRunnerSlideshow"
         src="pictures/movie1.jpeg"
         alt="Blade Runner 2049 poster"
         class="bladeRunner-movieimg" />
@@ -150,6 +151,7 @@ require __DIR__ . "/Header.php";
 
     </div>
 </section>
-
+<script src="script.js"></script>
 <?php
-require __DIR__ . "/footer.php" ?>
+require __DIR__ . "/offers.php";
+require __DIR__ . "/footer.php"; ?>

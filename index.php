@@ -29,7 +29,7 @@ require __DIR__ . "/Header.php"; ?>
         </div>
     </section>
 
-    <!-- <?php require __DIR__ . "/offers.php"; ?> -->
+    <?php require __DIR__ . "/offers.php"; ?>
 
     <h2 class="movie-list-header">Current movies</h2>
 

@@ -1,17 +1,21 @@
 const showMoreBtn = document.getElementById("show-more");
 
-document.getElementById("show-more").addEventListener("click", function () {
-  const hiddenMovies = document.querySelectorAll(".movie-item:nth-child(n+7)");
-  const isShowingMore = this.classList.toggle("expanded");
+if (showMoreBtn) {
+  showMoreBtn.addEventListener("click", function () {
+    const hiddenMovies = document.querySelectorAll(
+      ".movie-item:nth-child(n+7)"
+    );
+    const isShowingMore = this.classList.toggle("expanded");
 
-  if (isShowingMore) {
-    hiddenMovies.forEach((item) => item.classList.add("show"));
-    this.textContent = "Show less";
-  } else {
-    hiddenMovies.forEach((item) => item.classList.remove("show"));
-    this.textContent = "Show more";
-  }
-});
+    if (isShowingMore) {
+      hiddenMovies.forEach((item) => item.classList.add("show"));
+      this.textContent = "Show less";
+    } else {
+      hiddenMovies.forEach((item) => item.classList.remove("show"));
+      this.textContent = "Show more";
+    }
+  });
+}
 
 const footerTitles = document.querySelectorAll(".title-footer");
 
@@ -24,17 +28,49 @@ footerTitles.forEach((title) => {
 
 const scrollBtn = document.getElementById("scrollTopBtn");
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 20) {
-    scrollBtn.classList.add("show");
-  } else {
-    scrollBtn.classList.remove("show");
-  }
-});
-
-scrollBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
+if (scrollBtn) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 20) {
+      scrollBtn.classList.add("show");
+    } else {
+      scrollBtn.classList.remove("show");
+    }
   });
-});
+
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+}
+
+const movieImages = [
+  "pictures/movie1.jpeg",
+  "pictures/BR.bild2.jpg",
+  "pictures/bladerunner.jpg",
+];
+
+let movieIndex = 0;
+
+const movieImgElement = document.getElementById("bladeRunnerSlideshow");
+
+if (movieImgElement) {
+  // Visa första bilden direkt
+  movieImgElement.src = movieImages[movieIndex];
+  movieImgElement.style.opacity = 1;
+
+  function showMovieImage(newIndex) {
+    movieImgElement.style.opacity = 0;
+
+    setTimeout(() => {
+      movieIndex = (newIndex + movieImages.length) % movieImages.length;
+      movieImgElement.src = movieImages[movieIndex];
+      movieImgElement.style.opacity = 1;
+    }, 500);
+  }
+
+  setInterval(() => {
+    showMovieImage(movieIndex + 1);
+  }, 3000);
+}

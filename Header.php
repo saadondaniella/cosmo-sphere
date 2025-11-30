@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,8 +15,8 @@
     <script src="scrollTop.js"></script>
 </head>
 
-<body class="home">
-    
+<body class="home"> -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,16 +40,16 @@
 
         <!-- Hamburger ikon -->
         <label for="menu-toggle" class="menu-icon">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </label>
 
         <!-- Navigering -->
         <nav class="nav">
-          <div class="nav-links">
-              <a href="index">HOME</a>
-              <a href="movie.php">MOVIE</a>           
-          </div>
+            <div class="nav-links">
+                <a href="index">HOME</a>
+                <a href="movie.php">MOVIE</a>
+            </div>
         </nav>
     </header>
