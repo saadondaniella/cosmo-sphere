@@ -6,7 +6,7 @@ require __DIR__ . "/Header.php"; ?>
 <main>
     <article class="intro-text">
         <h1>Welcome <br>to a world full of Sci-Fi.</h1>
-        <p>Here you will find all the old and the latest movies. from single films to trilogies</p>
+        <p>Explore iconic classics and the latest intergalactic releases — all in one place.</p>
     </article>
 
     <section class="heroFilm-BladeRunner">
@@ -18,7 +18,7 @@ require __DIR__ . "/Header.php"; ?>
         </div>
 
         <div class="heroFilm-overlay">
-            <p class="heroFilm-label">A classicer:</p>
+            <p class="heroFilm-label">Explore the classics</p>
             <h3 class="heroFilm-headline">
                 BLADE RUNNER – The future we still don’t understand.
             </h3>
@@ -28,6 +28,8 @@ require __DIR__ . "/Header.php"; ?>
             </div>
         </div>
     </section>
+
+    <h2 class="movie-list-header">Smashing offers!</h2>
 
     <?php require __DIR__ . "/offers.php"; ?>
 
@@ -40,9 +42,9 @@ require __DIR__ . "/Header.php"; ?>
     <section class="FullExperiance-karusell">
         <div class="FullExperiance-wrapper">
             <article class="FullExperiance-card">
-                <img src="/pictures/biosalong.webp" />
+                <img src="/pictures/cinema.jpg" />
                 <h2>The cinema</h2>
-                <p>Welcome inside of cosmo Sphere Cinema…</p>
+                <p>Everything you need to know about the Sphere. Find us here!</p>
             </article>
 
             <article class="FullExperiance-card">
@@ -103,7 +105,7 @@ require __DIR__ . "/Header.php"; ?>
                     <div class="coming-body">
                         <p class="coming-quote">"WHAT COMES NEXT WILL CHANGE EVERYTHING."</p>
                         <h3 class="coming-title">GALAXY GUARDIANS</h3>
-                        <p class="coming-meta">IN THEATERS JANUARY 2026</p>
+                        <p class="coming-meta">Premieres • Feb 14, 2026</p>
                         <button class="coming-button">More info</button>
                     </div>
                 </article>
@@ -113,7 +115,7 @@ require __DIR__ . "/Header.php"; ?>
                     <div class="coming-body">
                         <p class="coming-quote">"COME EARLY. IF YOU DARE."</p>
                         <h3 class="coming-title">NO TOMORROW</h3>
-                        <p class="coming-meta">IN THEATERS JANUARY 1</p>
+                        <p class="coming-meta">Premieres • Feb 1, 2026</p>
                         <button class="coming-button">More info</button>
                     </div>
                 </article>
@@ -123,7 +125,7 @@ require __DIR__ . "/Header.php"; ?>
                     <div class="coming-body">
                         <p class="coming-quote">"NOT ALL WORLDS SHOULD BE DISCOVERED."</p>
                         <h3 class="coming-title">BEYOND THIS POINT</h3>
-                        <p class="coming-meta">IN THEATERS JUNE 10</p>
+                        <p class="coming-meta">Premieres • Apr 1, 2026</p>
                         <button class="coming-button">More info</button>
                     </div>
                 </article>
@@ -133,7 +135,7 @@ require __DIR__ . "/Header.php"; ?>
                     <div class="coming-body">
                         <p class="coming-quote">"SOMETHING IS COMING. AND IT'S NOT HUMAN."</p>
                         <h3 class="coming-title">STAROBOT - HE'S BACK</h3>
-                        <p class="coming-meta">IN THEATERS JUNE 16</p>
+                        <p class="coming-meta">Premieres • Jun 1, 2026</p>
                         <button class="coming-button">More info</button>
                     </div>
                 </article>
