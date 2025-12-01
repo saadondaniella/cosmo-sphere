@@ -111,8 +111,9 @@ ul {
 
 .logga {
   display: block;
-  margin: 20px auto;
-  height: 60vh;
+  width: 100%;
+  height: auto;
+  margin: auto;
 }
 
 .intro-text h1 {
@@ -465,7 +466,8 @@ button:hover {
 }
 
 .days:hover {
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--pink-color);
+  color: var(--darkblue-color);
 }
 .subtitle,
 .vip {

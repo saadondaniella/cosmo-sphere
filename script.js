@@ -48,7 +48,7 @@ if (scrollBtn) {
 const movieImages = [
   "pictures/movie1.jpeg",
   "pictures/BR.bild2.jpg",
-  "pictures/bladerunner.jpg",
+  "pictures/BR-bild3.jpeg",
 ];
 
 let movieIndex = 0;
@@ -56,7 +56,6 @@ let movieIndex = 0;
 const movieImgElement = document.getElementById("bladeRunnerSlideshow");
 
 if (movieImgElement) {
-  // Visa första bilden direkt
   movieImgElement.src = movieImages[movieIndex];
   movieImgElement.style.opacity = 1;
 
