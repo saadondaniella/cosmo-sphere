@@ -1,4 +1,37 @@
+@media (min-width: 600px) {
+  .coming-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (min-width: 768px) {
+  nav.nav {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-color);
+    position: relative;
+    z-index: 10;
+  }
+
+  .nav-links {
+    display: flex !important;
+    gap: 7rem;
+    align-items: center;
+  }
+
+  .nav-links a {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: 0.25s ease;
+  }
+
+  .nav-links a:hover {
+    color: var(--pink-color);
+    text-shadow: 0 0 5px var(--pink-color), 0 0 10px var(--pink-color),
+      0 0 20px var(--pink-color);
+  }
+
   .logga {
     height: 60vh;
     width: auto;

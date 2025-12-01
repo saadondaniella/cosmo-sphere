@@ -1,3 +1,12 @@
+:root {
+  --background-color: #030218;
+  --darkblue-color: #1e0359;
+  --text-color: #d9d9d9;
+  --accent-color: #1cadf6;
+  --pink-color: #ed57f9;
+  --blue-color: #575fe9;
+}
+
 header {
   width: 100%;
   overflow: visible !important;
@@ -48,6 +57,7 @@ header img,
 .rectangle p {
   margin: 0;
   padding: 0;
+  background-color: var(--background-color);
 }
 
 .rectangle p + p {

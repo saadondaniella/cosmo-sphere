@@ -28,13 +28,11 @@ body {
   overflow: hidden;
   z-index: -1;
 }
-
 .star {
   position: absolute;
   border-radius: 50%;
   animation: twinkle 2s infinite ease-in-out;
 }
-
 @keyframes twinkle {
   0%,
   100% {
@@ -44,70 +42,6 @@ body {
     opacity: 0.2;
   }
 }
-/* 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.mobile-header {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1em;
-}
-
-.mobile-header .logga {
-  height: auto;
-  max-width: 70vw;
-}
-
-.mobile-header .mobile-image {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 40px;
-  height: auto;
-}
-
-.site-header {
-  display: none;
-  background: var(--background-color);
-}
-
-.navbar {
-  display: flex;
-  justify-content: center;
-}
-
-.navlist {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6em;
-  padding: 2em 1em;
-  margin: 0;
-  max-width: 1200px;
-  width: 100%;
-}
-
-.navlist a {
-  display: inline-flex;
-  align-items: center;
-  padding: 6px 4px;
-  text-decoration: none;
-  font-size: 1.5em;
-  color: var(--text-color);
-  transition: all 0.25s ease;
-}
-
-.navlist a:hover {
-  color: var(--pink-color);
-  text-shadow: 0 0 5px var(--pink-color), 0 0 10px var(--pink-color),
-    0 0 20px var(--pink-color), 0 0 40px var(--pink-color);
-} */
 
 .logga {
   display: block;
@@ -122,7 +56,6 @@ ul {
   background-color: var(--background-color);
   font-size: 2rem;
 }
-
 .intro-text p {
   text-align: center;
   color: var(--accent-color);
@@ -137,20 +70,17 @@ ul {
   margin: 2rem auto;
   position: relative;
 }
-
 .heroFilm-frame {
   border-radius: 12px;
   overflow: hidden;
   margin: 5%;
 }
-
 .heroFilm-BladeRunner-poster {
   display: block;
   width: 100%;
   height: auto;
   margin-bottom: 5%;
 }
-
 .heroFilm-overlay {
   margin: 7%;
   background: rgba(10, 13, 25, 0.9);
@@ -159,26 +89,22 @@ ul {
   padding: 1rem 1em;
   backdrop-filter: blur(4px);
 }
-
 .heroFilm-label {
   color: var(--accent-color);
   font-size: 1rem;
   margin-left: 3%;
 }
-
 .heroFilm-headline {
   color: var(--accent-color);
   font-size: 1.1rem;
   line-height: 1.5;
   padding: 2%;
 }
-
 .heroFilm-actions {
   display: flex;
   gap: 0.75rem;
   flex-wrap: nowrap;
 }
-
 .heroButton {
   padding: 4px 10px;
   font-size: 0.7rem;
@@ -192,17 +118,18 @@ ul {
   margin-bottom: 5%;
   text-align: center;
 }
-
-.headerButton:hover {
+.heroButton:hover {
   box-shadow: inset 0 0 5px var(--blue-color), inset 0 0 10px var(--blue-color),
     0 0 5px var(--blue-color), 0 0 10px var(--blue-color);
 }
+
 .movie-list-header {
   margin-top: 2rem;
   font-size: 1.5rem;
   color: var(--accent-color);
   text-align: center;
 }
+
 .FullExperiance-header {
   text-align: center;
   color: var(--accent-color);
@@ -215,40 +142,35 @@ ul {
   overflow-y: visible;
   -webkit-overflow-scrolling: touch;
 }
-
 .FullExperiance-wrapper {
   display: flex;
   flex-wrap: nowrap;
-  gap: 1rem;
+  gap: 0.5rem;
   padding: 0 1rem;
   scroll-snap-type: x mandatory;
 }
-
 .FullExperiance-card {
   flex: 0 0 80vw;
   max-width: 80vw;
   box-sizing: border-box;
   background-color: var(--background-color);
   border-radius: 16px;
-  padding: 1rem;
+  padding: 0.5rem;
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
 }
-
 .FullExperiance-card img {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   margin-bottom: 0.75rem;
 }
-
 .FullExperiance-card h2 {
   margin: 0.5rem 0;
   font-size: 1.1rem;
   color: var(--accent-color);
 }
-
 .FullExperiance-card p {
   font-size: 0.85rem;
   line-height: 1.4;
@@ -263,24 +185,20 @@ ul {
   margin: 4% auto;
   width: 90vw;
 }
-
 .innerCircle-signUp {
   flex: 1;
   padding: 1em;
 }
-
 .innerCircle .innerCircle-signUp h2 {
   font-size: 2.5em;
   letter-spacing: 2px;
   color: var(--pink-color);
 }
-
 .innerCircle-img {
   flex: 1;
   display: flex;
   justify-content: center;
 }
-
 .innerCircle-img img {
   display: block;
   width: 100%;
@@ -289,21 +207,18 @@ ul {
   object-fit: cover;
   border-radius: 12px;
 }
-
 form {
   display: flex;
   flex-direction: column;
   gap: 10px;
   max-width: 420px;
 }
-
 input {
   padding: 10px;
   font-size: 16px;
   border-radius: 12px;
   background-color: var(--text-color);
 }
-
 button {
   padding: 10px 20px;
   background: var(--background-color);
@@ -315,7 +230,6 @@ button {
   align-self: baseline;
   font-size: 1.2rem;
 }
-
 button:hover {
   box-shadow: inset 0 0 5px var(--blue-color), inset 0 0 10px var(--blue-color),
     0 0 5px var(--blue-color), 0 0 10px var(--blue-color);
@@ -324,26 +238,22 @@ button:hover {
 .coming-section {
   padding: 2rem 1rem;
 }
-
 .coming-wrapper {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .coming-heading {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 1.5rem;
-  letter-spacing: 0.12em;
+
   color: var(--accent-color);
 }
-
 .coming-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
 }
-
 .coming-card {
   background-color: var(--background-color);
   border-radius: 16px;
@@ -352,41 +262,35 @@ button:hover {
   flex-direction: column;
   border: 1px solid var(--blue-color);
 }
-
 .coming-image {
   width: 100%;
   height: auto !important;
   display: block;
   object-fit: contain;
 }
-
 .coming-body {
   padding: 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
 }
-
 .coming-quote {
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--accent-color);
 }
-
 .coming-title {
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--blue-color);
 }
-
 .coming-meta {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--text-color);
 }
-
 .coming-button {
   margin-top: 0.7rem;
   align-self: flex-start;
@@ -403,17 +307,18 @@ button:hover {
 .bladeRunner-movie {
   max-width: 1200px;
   margin: 2.5rem auto;
-  padding: 0 1rem;
+  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   overflow: hidden;
+  border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.4), 0 0 60px rgba(0, 255, 255, 0.25);
 }
+
 .bladeRunner-movieimg {
   width: 100%;
-  height: auto;
-  border-radius: 16px;
+  height: 35vh;
   object-fit: cover;
   display: block;
 }
@@ -441,13 +346,11 @@ button:hover {
   background-color: rgba(3, 5, 30, 0.9);
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.4), 0 0 20px rgba(0, 255, 255, 0.2);
 }
-
 .bladeRunner-movie-info ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 .bladeRunner-movie-info li {
   font-size: 0.95rem;
   line-height: 1.6;
@@ -461,7 +364,6 @@ button:hover {
   margin: 5%;
   background-color: var(--background-color);
 }
-
 .genrebox div {
   border: 1px solid var(--accent-color);
   color: var(--text-color);
@@ -481,8 +383,6 @@ button:hover {
 }
 .about-movie p {
   background-color: var(--background-color);
-  grid-template-columns: 1fr;
-  justify-items: center;
   margin-right: 5%;
   margin-bottom: 5%;
 }
@@ -505,14 +405,12 @@ button:hover {
   color: var(--pink-color);
   background-color: var(--background-color);
 }
-
 .choose-date-title span {
   font-size: 1rem;
   font-weight: 400;
   opacity: 0.9;
   color: var(--text-color);
 }
-
 .time-tablet {
   display: flex;
   flex-direction: column;
@@ -521,7 +419,6 @@ button:hover {
   margin-right: 3%;
   margin-left: 3%;
 }
-
 .days {
   display: flex;
   justify-content: space-between;
@@ -532,7 +429,6 @@ button:hover {
   font-size: 1em;
   background: var(--background-color);
 }
-
 .day-label {
   font-weight: 600;
   color: var(--accent-color);
@@ -541,7 +437,6 @@ button:hover {
 .day-times {
   opacity: 0.9;
 }
-
 .days:hover {
   background: var(--pink-color);
   color: var(--darkblue-color);
@@ -552,6 +447,7 @@ button:hover {
   font-size: 1.5rem;
   background-color: var(--background-color);
 }
+
 .subtitle {
   margin-top: 5%;
 }
@@ -567,14 +463,12 @@ button:hover {
   margin-top: 3rem;
   border-radius: 20px;
 }
-
 .reviewsPart-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-
 .reviewsPart-content {
   position: absolute;
   inset: 0;
@@ -589,13 +483,11 @@ button:hover {
     rgba(0, 0, 0, 0.6) 80%
   );
 }
-
 .reviewsPart-title {
   color: var(--accent-color);
   font-size: 1.5rem;
   text-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
 }
-
 .review {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
@@ -610,13 +502,11 @@ button:hover {
   font-size: 0.9rem;
   margin: 0;
 }
-
 .critic {
   font-size: 0.7rem;
   color: var(--accent-color);
   opacity: 0.9;
 }
-
 .card {
   min-width: 80vw;
   border-radius: 16px;
@@ -625,16 +515,15 @@ button:hover {
   border: 1px solid black;
   scroll-snap-align: center;
 }
+
 .similar-movies {
   margin: 0 auto;
 }
-
 .similar-movies h2 {
   margin-bottom: 3%;
   font-size: 2em;
   color: var(--accent-color);
 }
-
 .similar-track {
   display: flex;
   gap: 16px;
@@ -643,11 +532,9 @@ button:hover {
   padding: 6px 0 16px 0;
   scrollbar-width: none;
 }
-
 .similar-track::-webkit-scrollbar {
   display: none;
 }
-
 .similar-card {
   flex: 0 0 180px;
   border-radius: 12px;
@@ -657,7 +544,6 @@ button:hover {
   flex-direction: column;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-
 .similar-card img {
   width: 100%;
   height: 240px;
@@ -673,7 +559,6 @@ button:hover {
   opacity: 0.9;
   letter-spacing: 0.5px;
 }
-
 .similar-card:hover {
   cursor: pointer;
 }
@@ -690,7 +575,6 @@ button:hover {
   margin: 0;
   padding: 0;
 }
-
 .title-footer {
   display: flex;
   justify-content: space-between;
@@ -702,13 +586,11 @@ button:hover {
   border-bottom: 2px solid var(--accent-color);
   cursor: pointer;
 }
-
 .footer-arrow {
   width: 1rem;
   height: auto;
   transition: transform 0.2s ease;
 }
-
 .footer-list li {
   margin: 0.4rem 0;
   color: var(--text-color);
@@ -721,15 +603,12 @@ button:hover {
   text-decoration: none;
   color: var(--blue-color);
 }
-
 .footer-list li:not(.title-footer) {
   display: none;
 }
-
 .footer-list.footer-list--open li:not(.title-footer) {
   display: block;
 }
-
 .footer-list.footer-list--open .footer-arrow {
   transform: rotate(180deg);
 }
@@ -772,12 +651,11 @@ button:hover {
 .bar {
   width: 30px;
   height: 3px;
-  background-color: var(--pink-color); /* Ändra till din färg */
+  background-color: var(--pink-color);
   transition: 0.3s;
   border-radius: 2px;
 }
 
-/* Desktop nav - visa normalt */
 .nav {
   display: flex;
 }
@@ -788,19 +666,16 @@ button:hover {
 }
 
 .nav-links a {
-  color: white;
+  color: var(--accent-color);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.3rem;
 }
 
-/* MOBIL */
 @media (max-width: 768px) {
-  /* Visa hamburger */
   .menu-icon {
     display: flex;
   }
 
-  /* Dölj nav default */
   .nav {
     display: none;
     flex-direction: column;
@@ -808,8 +683,8 @@ button:hover {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh; /* Hela skärmen */
-    background-color: rgba(0, 0, 0, 0.98);
+    height: 100vh;
+    background-color: var(--background-color);
     border: none;
     padding: 2rem 1rem;
     z-index: 15;
@@ -824,16 +699,13 @@ button:hover {
   }
 
   .nav-links a {
-    font-size: 24px;
     padding: 10px;
   }
 
-  /* Visa meny när checkbox markerad */
   #menu-toggle:checked ~ .nav {
     display: flex;
   }
 
-  /* Hamburger → X */
   #menu-toggle:checked + .menu-icon .bar:nth-child(1) {
     transform: rotate(45deg) translate(8px, 8px);
   }
