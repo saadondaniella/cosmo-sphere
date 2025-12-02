@@ -17,31 +17,25 @@ if (showMoreBtn) {
   });
 }
 
-const footerTitles = document.querySelectorAll(".title-footer");
-
-footerTitles.forEach((title) => {
+document.querySelectorAll(".title-footer").forEach((title) => {
   title.addEventListener("click", () => {
-    const footerList = title.closest(".footer-list");
-    footerList.classList.toggle("footer-list--open");
+    title.parentElement.parentElement.classList.toggle("footer-list--open");
   });
 });
 
-const scrollBtn = document.getElementById("scrollTopBtn");
+const scrollTopBtn = document.getElementById("scrollTopBtn");
 
-if (scrollBtn) {
+if (scrollTopBtn) {
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 20) {
-      scrollBtn.classList.add("show");
+    if (window.scrollY > 400) {
+      scrollTopBtn.classList.add("show");
     } else {
-      scrollBtn.classList.remove("show");
+      scrollTopBtn.classList.remove("show");
     }
   });
 
-  scrollBtn.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 }
 

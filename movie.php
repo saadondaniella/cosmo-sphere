@@ -151,7 +151,7 @@ require __DIR__ . "/Header.php";
 
     </div>
 </section>
-<script src="script.js"></script>
+
 <?php
 require __DIR__ . "/offers.php";
 require __DIR__ . "/footer.php"; ?>

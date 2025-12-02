@@ -96,6 +96,13 @@
     margin-bottom: 3%;
   }
 
+  .smashinOffer {
+    text-align: center;
+    color: var(--accent-color);
+    font-size: 2rem;
+    margin-bottom: 7%;
+  }
+
   .movie-list-header {
     margin-top: 2rem;
     font-size: 2rem;
