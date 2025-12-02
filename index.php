@@ -6,7 +6,7 @@ require __DIR__ . "/Header.php"; ?>
 <main>
     <article class="intro-text">
         <h1>Welcome <br>to a world full of Sci-Fi.</h1>
-        <p>Explore iconic classics and the latest intergalactic releases — all in one place.</p>
+        <p>Explore iconic classics and the latest intergalactic releases — all in one place. The Cosmo Sphere Cinema.</p>
     </article>
 
     <section class="heroFilm-BladeRunner">
