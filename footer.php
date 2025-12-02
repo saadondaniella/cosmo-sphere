@@ -54,7 +54,9 @@
 
 </section>
 
-<img src="/pictures/WALL_Elila.png" alt="wall-e" class="moving-image">
+<div class="rolling-row">
+    <img src="/pictures/WALL_Elila.png" alt="wall-e" class="moving-image">
+</div>
 
 <button id="scrollTopBtn" aria-label="Till toppen">
     <img src="/pictures/comet-ikon.png" alt="Scrolla till toppen">

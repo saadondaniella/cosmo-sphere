@@ -27,7 +27,7 @@ const scrollTopBtn = document.getElementById("scrollTopBtn");
 
 if (scrollTopBtn) {
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 400) {
+    if (window.scrollY > 10) {
       scrollTopBtn.classList.add("show");
     } else {
       scrollTopBtn.classList.remove("show");

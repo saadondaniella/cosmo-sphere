@@ -617,30 +617,36 @@ button:hover {
   transform: rotate(180deg);
 }
 
+.rolling-row {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  background: transparent;
+}
+
 .moving-image {
-  position: relative;
-  animation: moveRight 10s linear infinite;
-  height: 150px;
   width: 150px;
+  height: 150px;
+  display: block;
+  transform: translateX(-50px);
+  animation: moveRight 10s linear infinite;
 }
 
 @keyframes moveRight {
   0% {
-    left: -10px;
-    transform: rotate(0deg);
+    transform: translateX(-50px) rotate(0deg);
   }
   100% {
-    left: 100%;
-    transform: rotate(365deg);
+    transform: translateX(calc(100vw + 150px)) rotate(365deg);
   }
 }
 
-/* Dölj checkbox */
 #menu-toggle {
   display: none;
 }
 
-/* Hamburger ikon - dölj på desktop */
 .menu-icon {
   display: none;
   flex-direction: column;
